@@ -1,0 +1,221 @@
+.project {
+    padding: 170px 0 113px;
+}
+
+.project-slider-item {
+    max-width: 271px;
+    width: 100%;
+    min-height: 720px;
+    padding-top: 223px;
+    margin-left: -15px;
+    transition: all 0.2s cubic-bezier(0.48, 0.24, 0.39, 0.77);
+}
+
+.project-slider-item__inner,
+.project-mobile-slider-item__inner {
+    width: 271px;
+    height: 315px;
+    position: relative;
+    transition: all 0.2s cubic-bezier(0.48, 0.24, 0.39, 0.77);
+    .block__item-btn {
+        margin-top: initial;
+    }
+}
+.project-slider-item__inner-img {
+    width: 271px;
+    height: 315px;
+    overflow: hidden;
+    transition: all 0.2s cubic-bezier(0.48, 0.24, 0.39, 0.77);
+    source,
+    img {
+        width: 271px;
+        height: 315px;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+.project-slider-item__inner-btn {
+    position: absolute;
+    right: 30px;
+    bottom: 52px;
+    opacity: 0;
+    transition: all 0.2s cubic-bezier(0.48, 0.24, 0.39, 0.77);
+}
+.project-slider-new {
+    position: absolute;
+    top: 120px;
+    right: -228px;
+    &__inner {
+        font-size: 0;
+        line-height: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $black;
+        opacity: 0;
+        transition: all 0.2s cubic-bezier(0.48, 0.24, 0.39, 0.77);
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.project-slider-item:hover {
+    .project-slider-item__inner-btn {
+        opacity: 1;
+    }
+}
+
+.project-slider-item__wrap,
+.project-mobile-slider-item__wrap {
+    padding-top: 58px;
+    &-title {
+        font-size: 24px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: $black;
+        margin-bottom: 5px;
+    }
+    &-subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 4.2px;
+        color: $fgrey;
+        margin-bottom: 20px;
+    }
+    &-subtext {
+        color: $grey;
+    }
+}
+
+.project-slider {
+    .slick-list.draggable {
+        margin: 0;
+        height: 756px;
+    }
+    .slick-active {
+        width: 271px !important;
+    }
+    .slick-list {
+        margin: 0 -15px;
+    }
+    .slick-slide {
+        outline: none;
+        margin: 0 15px;
+    }
+    .slick-current {
+        width: 371px !important;
+        .project-slider-item {
+            max-width: 371px;
+            width: 100%;
+            min-height: 720px;
+            padding-top: 0;
+            display: flex;
+        }
+        .project-slider-item__inner {
+            width: 371px;
+            height: 538px;
+        }
+        .project-slider-item__inner-img {
+            width: 371px;
+            height: 538px;
+            source,
+            img {
+                width: 371px;
+                height: 538px;
+            }
+        }
+        .project-slider-item__inner-btn {
+            right: 72px;
+        }
+        .project-slider-new {
+            &__inner {
+                font-size: 35px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.project-slider-arrows {
+    position: absolute;
+    top: 124px;
+    right: 0;
+}
+
+// Mobile slider
+
+.container--mod {
+    overflow: hidden;
+}
+
+.project-mobile {
+    display: none;
+    padding: 170px 0 120px;
+    overflow: hidden;
+}
+
+.project-mobile-slider-item {
+    max-width: 271px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.project-mobile-slider-item__inner-img {
+    width: 271px;
+    height: 315px;
+    overflow: hidden;
+    source,
+    img {
+        width: 271px;
+        height: 315px;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+.project-mobile-slider-item__inner-btn {
+    position: absolute;
+    right: 30px;
+    bottom: 52px;
+    opacity: 0;
+    transition: all 0.2s cubic-bezier(0.48, 0.24, 0.39, 0.77);
+}
+
+.project-mobile-slider-item:hover {
+    .project-mobile-slider-item__inner-btn {
+        opacity: 1;
+    }
+}
+
+.project-mobile-slider {
+    .slick-list {
+        margin: 0 -15px;
+    }
+    .slick-slide {
+        outline: none;
+        margin: 0 15px;
+    }
+}
+
+.project-mobile-slider-item__wrap {
+    padding-top: 34px;
+}
+
+.project-mobile-slider-arrows {
+    position: absolute;
+    top: -56px;
+    right: 0;
+}
+
+// Media slider
+
+@media (max-width: 1460px) {
+    .project {
+        display: none;
+    }
+    .project-mobile {
+        display: block;
+    }
+}

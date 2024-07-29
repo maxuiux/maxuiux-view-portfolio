@@ -1,0 +1,100 @@
+/* -footer */
+
+.footer {
+    color: $gray;
+    padding: 55px 0 193px;
+    background-color: $navyBlue;
+    overflow: hidden;
+    a {
+        color: $gray;
+    }
+    &-logo {
+        height: 110px;
+        width: 110px;
+        overflow: hidden;
+        margin-bottom: 22px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            object-position: center center;
+        }
+    }
+    .copyright {
+        margin-bottom: 31px;
+    }
+    &-menu__list {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: -11px;
+        &-link {
+            padding: 8px 0;
+        }
+        &-link:focus,
+        &-link:hover {
+            color: $green;
+        }
+    }
+    &__contact {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    &__phone,
+    &__email {
+        margin-bottom: 19px;
+    }
+    &__phone:focus,
+    &__email:focus,
+    &__phone:hover,
+    &__email:hover {
+        color: $green;
+    }
+    &__adress {
+        margin-bottom: 40px;
+    }
+    &-social__list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 38px;
+        &-item {
+            margin: 0 11px;
+        }
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid $gray;
+            padding: 5px;
+            transition: all $transition;
+            svg {
+                height: auto;
+                width: 16px;
+                fill: $gray;
+                transition: all $transition;
+            }
+        }
+        &-link:focus,
+        &-link:hover {
+            border: 2px solid $green;
+            svg {
+                fill: $green;
+            }
+        }
+    }
+    .mobile-app {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        a {
+            transform: scale(1);
+            margin: 0 8px 10px 0;
+        }
+        a:focus,
+        a:hover {
+            transform: scale(0.98);
+        }
+    }
+}

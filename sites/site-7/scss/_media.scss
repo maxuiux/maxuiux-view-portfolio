@@ -1,0 +1,140 @@
+@media (max-width: 1199px) {
+    .menu {
+        display: none;
+    }
+    .header-center__info {
+        display: none;
+    }
+    .sidebar {
+        &__top {
+            display: block;
+        }
+    }
+    .menu-btn {
+        display: block;
+    }
+    .header-banner__item {
+        margin-bottom: 20px;
+    }
+    .masters-slider {
+        .slick-list {
+            margin: 0 -30px;
+        }
+        .slick-slide {
+            margin: 0 30px;
+        }
+    }
+    .work-order {
+        &__item {
+            &-inner {
+                padding: 24px 20px;
+            }
+            &-icon {
+                width: 48px;
+                height: 48px;
+            }
+            &-title {
+                font-size: 20px;
+            }
+            &-wrap {
+                padding: 24px;
+            }
+            &-list {
+                margin-bottom: 30px;
+            }
+            &-btn {
+                font-size: 16px;
+            }
+        }
+    }
+    .masters-nearby-form {
+        flex-direction: column;
+        &__input {
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .title {
+        font-size: 24px;
+    }
+    .info-label {
+        font-size: 24px;
+    }
+    .work-order {
+        &__item {
+            min-height: 300px;
+            margin-bottom: 24px;
+        }
+    }
+    .footer {
+        padding: 55px 0 85px;
+        &__item {
+            margin-bottom: 34px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .btn-main {
+        padding: 5px 26px;
+        font-size: 16px;
+        line-height: 33px;
+    }
+    .urgent-call-btn {
+        display: none;
+    }
+    .header-top__contact {
+        display: block;
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .header-center__contact {
+        display: none;
+    }
+    .header {
+        &-top {
+            padding: 6px 0 6px;
+        }
+        &-center {
+            padding: 0 0 18px;
+        }
+        &-banner {
+            height: 600px;
+        }
+        .logo,
+        .sidebar__logo {
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .about {
+        &__img {
+            margin-bottom: 24px;
+        }
+    }
+    .reviews__item {
+        margin-bottom: 24px;
+        .btn-main {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    .reviews-slider__arrow-btn,
+    .partners-slider__arrow-btn {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 512px) {
+    .header__authorization {
+        a:nth-child(2) {
+            display: none;
+        }
+    }
+}

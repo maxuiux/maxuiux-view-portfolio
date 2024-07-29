@@ -1,0 +1,84 @@
+/* -slick custom */
+
+.container-onshadow {
+    max-width: 1192px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+// -masters-slider
+
+.masters-slider {
+    .slick-list {
+        margin: 0 -88px;
+    }
+    .slick-slide {
+        margin: 0 88px;
+    }
+}
+
+// -last-works-slider
+
+.last-works-slider {
+    .slick-list {
+        margin: 0 -15px;
+    }
+    .slick-slide {
+        padding: 10px 0 32px;
+        margin: 0 15px;
+    }
+    .slick-dots {
+        text-align: center;
+    }
+    .slick-dots li {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 2px solid $green;
+        border-radius: 50%;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: all $transition;
+    }
+    .slick-dots .slick-active {
+        background-color: $green;
+    }
+}
+
+// -reviews-slider
+
+.reviews-slider {
+    .slick-list {
+        margin: 0 -15px;
+        overflow: visible !important;
+    }
+    .slick-slide {
+        opacity: 0;
+        padding: 10px 0 35px;
+        margin: 0 15px;
+        transition: all $transition;
+    }
+    .slick-active {
+        opacity: 1 !important;
+    }
+}
+
+// -partners-slider
+
+.partners-slider {
+    .slick-list {
+        margin: 0 -15px;
+        overflow: visible !important;
+    }
+    .slick-slide {
+        opacity: 0;
+        padding: 10px 0 35px;
+        margin: 0 15px;
+        transition: all $transition;
+    }
+    .slick-active {
+        opacity: 1 !important;
+    }
+}
+
+/* #slick custom */

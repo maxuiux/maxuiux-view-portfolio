@@ -3330,6 +3330,10 @@ body.lock {
         background-color: #f7f7f7
     }
 
+    .social__list-li  svg{
+        color: #f7f7f7;
+    }
+
     .logo svg {
         fill: #f7f7f7
     }

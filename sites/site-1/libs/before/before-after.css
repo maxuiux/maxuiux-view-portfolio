@@ -1,0 +1,99 @@
+.before-after-slider{position:relative;overflow:hidden;display: inline-block}
+.before-after-slider img{width: 100% !important; display:block;max-width:none}
+.before-after-slider .resize{position:absolute;z-index:3;top:0;left:0;height:100%;width:32%;overflow:hidden}
+.before-after-slider .resize img {height:100% !important; width:auto !important;}
+
+.before-after-slider {
+    position: relative;
+}
+
+.before-after-slider .handle {
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    left: 32%;
+    top: 50%;
+    margin-left: -22px;
+    margin-top: -22px;
+    border: 3px solid white;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    z-index: 40;
+    cursor: pointer;
+}
+
+.before-after-slider .handle:before,
+.before-after-slider .handle:after {
+    content: " ";
+    display: block;
+    width: 3px;
+    height: 9999px;
+    left: 50%;
+    margin-left: -1.5px;
+    background: white;
+    position: absolute;
+    z-index: 30;
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+.before-after-slider .handle:before {
+    bottom: 50%;
+    margin-bottom: 22px;
+    box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+.before-after-slider .handle:after {
+    top: 50%;
+    margin-top: 22px;
+    box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+.before-after-slider .handle-left-arrow,
+.before-after-slider .handle-right-arrow {
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    position: absolute;
+}
+
+.before-after-slider .handle-left-arrow,
+.before-after-slider .handle-right-arrow {
+    top: 50%;
+    margin-top: -6px;
+}
+
+.before-after-slider .handle-left-arrow {
+    border-right-color: white;
+    left: 50%;
+    margin-left: -17px;
+}
+
+.before-after-slider .handle-right-arrow {
+    border-left-color: white;
+    right: 50%;
+    margin-right: -17px;
+}
+
+.before-after-slider-mark-before,
+.before-after-slider-mark-after {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.before-after-slider-mark-after {
+    left: auto;
+    right: 0;
+}
+

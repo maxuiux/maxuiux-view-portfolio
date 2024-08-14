@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Simple</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="stylesheet" href="css/main.min.css?ver=0.0.44">
+  <!-- <link rel="stylesheet" href="libs/before/before-after.css"> -->
+
+  <!-- <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css"> -->
+
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+
+  <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <header class="header-new header-new--black">
+
+    <div class="header-new__wrap">
+
+        <a class="header-new__logo" href="#">
+            <svg>
+                <use xlink:href="img/sprites/multi.svg#logo"></use>
+            </svg>
+        </a>
+        <!-- /.header-new__logo -->
+
+        <div class="header-new__overflow">
+            <div class="header-new__scroll">
+                <div class="header-new__blocks">
+
+                    <div class="header-new__block header-new__block--menu">
+                        <nav class="header-new-menu">
+                            <ul class="header-new-menu__list">
+
+                                <li
+                                    class="header-new-menu__list-item header-new-menu__list-item--arrow js-header-new-menu-sub-btn">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        <span>
+                                            Услуги
+                                        </span>
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-chevron-down"></use>
+                                        </svg>
+                                    </a>
+                                    <!-- /.header-new-menu__list-link -->
+
+                                    <div class="header-new-menu-sub">
+                                        <div class="header-new-menu-sub__wrap">
+                                            <div class="header-new-menu-sub__blocks">
+                                                <div class="header-new-menu-sub__block">
+                                                    <div class="header-new-menu-sub__title">
+                                                        Услуги
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__title -->
+                                                    <ul class="header-new-menu-sub__list">
+                                                        <li>
+                                                            <a href="#">
+                                                                Индивидуальное<br>
+                                                                проектирование
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- /.header-new-menu-sub__list -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block -->
+
+                                                <div class="header-new-menu-sub__block">
+                                                    <div class="header-new-menu-sub__title">
+                                                        Решения
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__title -->
+                                                    <ul class="header-new-menu-sub__list">
+                                                        <li>
+                                                            <a href="#">
+                                                                Архитектурное<br>
+                                                                проектирование
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Эскизный проект
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Архитектурные решения
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Конструктивные решения
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Инженерный проект
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Отопление
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Водоснабжение и Канализация
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Вентиляция
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Газоснабжение
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Электроснабжение
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- /.header-new-menu-sub__list -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block -->
+                                                <div class="header-new-menu-sub__block header-new-menu-sub__block--img">
+                                                    <div class="header-new-menu-sub__block-img">
+                                                        <img loading="lazy" src="img/about-footer-2.webp" alt="picture">
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-img -->
+                                                    <div class="header-new-menu-sub__block-title">
+                                                        Заготовленый текст
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-title -->
+                                                    <div class="header-new-menu-sub__block-text">
+                                                        Давно выяснено, что при оценке дизайна и композиции читаемый
+                                                        текст
+                                                        мешает
+                                                        сосредоточиться.
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-text -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block header-new-menu-sub__block--img -->
+                                            </div>
+                                            <!-- /.header-new-menu-sub__blocks -->
+                                        </div>
+                                        <!-- /.header-new-menu-sub__wrap -->
+                                    </div>
+                                    <!-- /.header-new-menu-sub -->
+
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                                <li class="header-new-menu__list-item">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        Проекты Домов
+                                    </a>
+                                    <!-- /.header-new-menu__list-link -->
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                                <li class="header-new-menu__list-item">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        Цены
+                                    </a>
+                                    <!-- /.header-new-menu__list-link -->
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                                <li
+                                    class="header-new-menu__list-item header-new-menu__list-item--arrow js-header-new-menu-sub-btn">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        <span>
+                                            Бюро
+                                        </span>
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-chevron-down"></use>
+                                        </svg>
+                                    </a>
+
+                                    <!-- /.header-new-menu__list-link -->
+                                    <div class="header-new-menu-sub">
+                                        <div class="header-new-menu-sub__wrap">
+                                            <div class="header-new-menu-sub__blocks">
+
+                                                <div class="header-new-menu-sub__block">
+                                                    <div class="header-new-menu-sub__title">
+                                                        Бюро
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__title -->
+                                                    <ul class="header-new-menu-sub__list">
+                                                        <li>
+                                                            <a href="#">
+                                                                О нас
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Преимущества
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Сотрудники
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Новости
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Вакансии
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Сотрудничество
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Реквизиты
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- /.header-new-menu-sub__list -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block -->
+                                                <div class="header-new-menu-sub__block header-new-menu-sub__block--img">
+                                                    <div class="header-new-menu-sub__block-img">
+                                                        <img loading="lazy" src="img/contact-slider-1.webp"
+                                                            alt="picture">
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-img -->
+                                                    <div class="header-new-menu-sub__block-title">
+                                                        Заготовленый текст
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-title -->
+                                                    <div class="header-new-menu-sub__block-text">
+                                                        Давно выяснено, что при оценке дизайна и композиции читаемый
+                                                        текст
+                                                        мешает
+                                                        сосредоточиться.
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-text -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block header-new-menu-sub__block--img -->
+                                            </div>
+                                            <!-- /.header-new-menu-sub__blocks -->
+                                        </div>
+                                        <!-- /.header-new-menu-sub__wrap -->
+                                    </div>
+                                    <!-- /.header-new-menu-sub -->
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                            </ul>
+                            <!-- /.header-new-menu__list -->
+                        </nav>
+                        <!-- /.header-new__menu -->
+                    </div>
+                    <!-- /.header-new__block -->
+
+                    <div class="header-new__block header-new__block--info">
+                        <div class="header-new-info">
+                            <div class="header-new-info__items">
+
+                                <div class="header-new-info__item">
+                                    <a class="header-new-info__tel" href="tel:+74993472705">
+                                        +7 (499) 347-27-05
+                                    </a>
+                                    <!-- /.header-new-info__tel -->
+                                </div>
+                                <!-- /.header-new-info__item -->
+
+                                <div class="header-new-info__item header-new-info__item--social">
+                                    <div class="header-new-info-social">
+                                        <ul class="header-new-info-social__list">
+                                            <li>
+                                                <a href="#">
+                                                    <svg>
+                                                        <use xlink:href="img/sprites/multi.svg#icon-header-mail"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <svg>
+                                                        <use xlink:href="img/sprites/multi.svg#icon-whatsapp"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <svg>
+                                                        <use xlink:href="img/sprites/multi.svg#icon-telegram"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.header-new-info-social__list -->
+                                    </div>
+                                    <!-- /.header-new-info-social -->
+                                </div>
+                                <!-- /.header-new-info__item header-new-info__item-social -->
+
+                                <div class="header-new-info__item header-new-info__item--btn">
+                                    <button class="header-new__btn">
+                                        <span>
+                                            Перезвоните Мне
+                                        </span>
+                                    </button>
+                                    <!-- /.header-new-info__btn -->
+                                </div>
+                                <!-- /.header-new-info__item header-new-info__item--btn -->
+
+                            </div>
+                            <!-- /.header-new-info__items -->
+                        </div>
+                        <!-- /.header-new-info -->
+
+                    </div>
+                    <!-- /.header-new__block -->
+
+                </div>
+                <!-- /.header-new__blocks -->
+            </div>
+            <!-- /.header-new__scroll -->
+        </div>
+        <!-- /.header-new__overflow -->
+
+        <button class="header-new-hamburger__btn">
+            <div class="header-new-hamburger__btn-wrap">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- /.header-new-hamburger__btn-wrap -->
+        </button>
+        <!-- /.header-new-hamburger__btn -->
+
+    </div>
+    <!-- /.header-new__wrap -->
+
+</header>
+<!-- /.header-new -->
+
+    <!-- Сео оптимизировано. -->
+    <section class="section-intro section-intro--order-project">
+    <div class="section-intro__wrap">
+        <h1 class="section-intro__title">
+            <div class="section-intro__title-wrap section-intro__title-wrap--grid-1">
+                <span>
+                    Как
+                </span>
+                <span>
+                    <img loading="lazy" src="img/intro-2.webp" alt="picture">
+                </span>
+                <span>
+                    Заказать
+                </span>
+            </div>
+            <!-- /.section-intro__title-wrap section-intro__title-wrap--grid-1 -->
+            <div class="section-intro__title-wrap section-intro__title-wrap--grid-2">
+                <span>
+                    Проект
+                </span>
+                <span>
+                    <img loading="lazy" src="img/intro-1.webp" alt="picture">
+                </span>
+            </div>
+            <!-- /.section-intro__title-wrap section-intro__title-wrap--grid-2 -->
+        </h1>
+        <!-- /.section-intro__title -->
+        <div class="section-intro__order">
+            <div class="section-intro__order-wrap">
+                <svg>
+                    <use xlink:href="img/sprites/multi.svg#icon-check"></use>
+                </svg>
+                <span>
+                    <!-- 60 дней BIM проектирование  -->
+                    От 1000 руб/м2 и 25 дней
+                </span>
+            </div>
+            <!-- /.section-intro__order-wrap -->
+            <div class="section-intro__order-btn">
+                <span>
+                    Заказать
+                </span>
+            </div>
+            <!-- /.section-intro__order-btn -->
+        </div>
+        <!-- /.section-intro__order -->
+        <div class="section-intro__subtitle">
+            Мы единая точка входа для всех ваших задач в области анализа, проектирования, дизайна, инженерии и
+            строительства.
+        </div>
+        <!-- /.section-intro__subtitle -->
+    </div>
+    <!-- /.section-intro__wrap -->
+</section>
+<!-- /.section-intro -->
+    <section class="section-order-project__wrap">
+    <div class="section-order-project__items js-paralax-order-project-items">
+        <div class="section-order-project__item">
+            <img loading="lazy" src="img/order-project-item-1.webp" alt="picture">
+        </div>
+        <!-- /.section-order-project__item -->
+        <div class="section-order-project__item">
+            <img loading="lazy" src="img/order-project-item-7.webp" alt="picture">
+        </div>
+        <!-- /.section-order-project__item -->
+        <div class="section-order-project__item">
+            <img loading="lazy" src="img/order-project-item-6.webp" alt="picture">
+        </div>
+        <!-- /.section-order-project__item -->
+        <div class="section-order-project__item">
+            <img loading="lazy" src="img/order-project-item-5.webp" alt="picture">
+        </div>
+        <!-- /.section-order-project__item -->
+        <div class="section-order-project__item">
+            <img loading="lazy" src="img/order-project-item-2.webp" alt="picture">
+        </div>
+        <!-- /.section-order-project__item -->
+        <div class="section-order-project__item">
+            <img loading="lazy" src="img/order-project-item-4.webp" alt="picture">
+        </div>
+        <!-- /.section-order-project__item -->
+        <div class="section-order-project__item">
+            <img loading="lazy" src="img/order-project-item-3.webp" alt="picture">
+        </div>
+        <!-- /.section-order-project__item -->
+        <div class="section-order-project__item">
+            <img loading="lazy" src="img/order-project-item-8.webp" alt="picture">
+        </div>
+        <!-- /.section-order-project__item -->
+        <div class="section-order-project__item">
+            <img loading="lazy" src="img/order-project-item-9.webp" alt="picture">
+        </div>
+        <!-- /.section-order-project__item -->
+    </div>
+    <!-- /.section-order-project__items -->
+</section>
+<!-- /.section-order-project__wrap -->
+
+    <!-- <p> отключать там, где нету текста. -->
+    <section class="section-order-project">
+    <div class="section-order-project__blocks">
+
+        <div class="section-order-project__block">
+            <div class="section-order-project__block-wrap">
+
+                <div class="section-order-project__hor-line"></div>
+                <!-- /.section-order-project__hor-line -->
+
+                <div class="section-order-project__block-info">
+                    <h2 class="section-order-project__block-title">
+                        Знакомство
+                    </h2>
+                    <!-- /.section-order-project__block-title -->
+
+                    <!-- В WordPress где нету описания, отключять, для SEO
+                    Блок должен быть только, когда, есть текст.
+                    -->
+                    <!-- <p class="section-order-project__block-subtitle"></p> -->
+                    <!-- /.section-order-project__block-subtitle -->
+
+                    <ol class="section-order-project__list">
+                        <li>
+                            Позвоните по телефону
+                            <a href="tel:+74993472705">
+                                +7 (499) 347-27-05
+                            </a>
+                        </li>
+                        <li>
+                            Приезжайте в офис
+                            Москва, ул. Мясницкая, дом 13, строение 18
+                        </li>
+                        <li>
+                            Напишите на почту
+                            <a href="mailto:info@arhitectura.ru">
+                                info@arhitectura.ru
+                            </a>
+                        </li>
+                        <li>
+                            Оставьте заявку на сайте
+                            <a href="#">
+                                Оставить заявку
+                            </a>
+                        </li>
+                    </ol>
+                    <!-- /.section-order-project__list -->
+                </div>
+                <!-- /.section-order-project__block-info -->
+
+                <div class="section-order-project__block-img">
+                    <img loading="lazy" src="img/order-project-block-1.webp" alt="picture">
+                </div>
+                <!-- /.section-order-project__block-img -->
+
+            </div>
+            <!-- /.section-order-project__block-wrap -->
+        </div>
+        <!-- /.section-order-project__block -->
+
+        <div class="section-order-project__block">
+            <div class="section-order-project__block-wrap">
+
+                <div class="section-order-project__hor-line"></div>
+                <!-- /.section-order-project__hor-line -->
+
+                <div class="section-order-project__block-info">
+                    <h2 class="section-order-project__block-title">
+                        ​​Постановка задачи
+                    </h2>
+                    <!-- /.section-order-project__block-title -->
+                    <p class="section-order-project__block-subtitle">
+                        Мы поможем с любыми задачами про проектированию, архитектуре, дизайну или строительству
+                    </p>
+                    <!-- /.section-order-project__block-subtitle -->
+
+                    <ol class="section-order-project__list">
+                        <li>
+                            Проект "под ключ".
+                        </li>
+                        <li>
+                            Планировка.
+                        </li>
+                        <li>
+                            Дизайн фасадов.
+                        </li>
+                        <li>
+                            Дизайн интерьера.
+                        </li>
+                        <li>
+                            Изменение готового проекта.
+                        </li>
+                        <li>
+                            Просчет нагрузок.
+                        </li>
+                        <li>
+                            Реконструкция.
+                        </li>
+                        <li>
+                            Консультация по материалам или конструктиву.
+                        </li>
+                        <li>
+                            Размещение дома на готовом фундаменте.
+                        </li>
+                    </ol>
+                    <!-- /.section-order-project__list -->
+                </div>
+                <!-- /.section-order-project__block-info -->
+
+                <div class="section-order-project__block-img">
+                    <img loading="lazy" src="img/order-project-block-2.webp" alt="picture">
+                </div>
+                <!-- /.section-order-project__block-img -->
+
+            </div>
+            <!-- /.section-order-project__block-wrap -->
+        </div>
+        <!-- /.section-order-project__block -->
+
+        <div class="section-order-project__block">
+            <div class="section-order-project__block-wrap">
+
+                <div class="section-order-project__hor-line"></div>
+                <!-- /.section-order-project__hor-line -->
+
+                <div class="section-order-project__block-info">
+                    <h2 class="section-order-project__block-title">
+                        Договор и оплата
+                    </h2>
+                    <!-- /.section-order-project__block-title -->
+
+                    <!-- В WordPress где нету описания, отключять, для SEO
+                    Блок должен быть только, когда, есть текст.
+                    -->
+                    <!-- <p class="section-order-project__block-subtitle"></p> -->
+                    <!-- /.section-order-project__block-subtitle -->
+
+                    <ol class="section-order-project__list">
+                        <li>
+                            Согласовываем стоимость на любую из задач и заключаем договор.
+                        </li>
+                        <li>
+                            Работаем по предоплате и разбиваем общий платеж на несколько частей.
+                        </li>
+                        <li>
+                            Вы можете приехать к нам в офис или оплатить дистанционно.
+                        </li>
+                    </ol>
+                    <!-- /.section-order-project__list -->
+                </div>
+                <!-- /.section-order-project__block-info -->
+
+                <div class="section-order-project__block-img">
+                    <img loading="lazy" src="img/order-project-block-3.webp" alt="picture">
+                </div>
+                <!-- /.section-order-project__block-img -->
+
+            </div>
+            <!-- /.section-order-project__block-wrap -->
+        </div>
+        <!-- /.section-order-project__block -->
+
+        <div class="section-order-project__block">
+            <div class="section-order-project__block-wrap">
+
+                <div class="section-order-project__hor-line"></div>
+                <!-- /.section-order-project__hor-line -->
+
+                <div class="section-order-project__block-info">
+                    <h2 class="section-order-project__block-title">
+                        Работа над проектом
+                    </h2>
+                    <!-- /.section-order-project__block-title -->
+                    <p class="section-order-project__block-subtitle">
+                        Со всеми этапами разработки проекта можно ознакомиться <a href="#">здесь</a>
+                    </p>
+                    <!-- /.section-order-project__block-subtitle -->
+
+                    <ol class="section-order-project__list">
+                        <li>
+                            Выполняем поставленные задачи в сроки, согласно договору.
+                        </li>
+                        <li>
+                            Согласовываем важные детали по ходу проекта с заказчиками.
+                        </li>
+                        <li>
+                            Никогда не пропадаем и всегда на связи.
+                        </li>
+                        <li>
+                            Регулярно выезжаем на стройку или в магазины.
+                        </li>
+                    </ol>
+                    <!-- /.section-order-project__list -->
+                </div>
+                <!-- /.section-order-project__block-info -->
+
+                <div class="section-order-project__block-img section-order-project__block-img--display-none-mobile">
+                    <img loading="lazy" src="img/order-project-block-4.webp" alt="picture">
+                </div>
+                <!-- /.section-order-project__block-img section-order-project__block-img--display-none-mobile -->
+
+                <div class="section-order-project__block-img section-order-project__block-img--mobile">
+                    <img loading="lazy" src="img/order-project-block-4-1.webp" alt="picture">
+                </div>
+                <!-- /.section-order-project__block-img section-order-project__block-img--mobile -->
+
+            </div>
+            <!-- /.section-order-project__block-wrap -->
+        </div>
+        <!-- /.section-order-project__block -->
+
+        <div class="section-order-project__block">
+            <div class="section-order-project__block-wrap">
+
+                <div class="section-order-project__hor-line"></div>
+                <!-- /.section-order-project__hor-line -->
+
+                <div class="section-order-project__block-info">
+                    <h2 class="section-order-project__block-title">
+                        Финал
+                    </h2>
+                    <!-- /.section-order-project__block-title -->
+
+                    <!-- В WordPress где нету описания, отключять, для SEO
+                    Блок должен быть только, когда, есть текст.
+                    -->
+                    <!-- <p class="section-order-project__block-subtitle"></p> -->
+                    <!-- /.section-order-project__block-subtitle -->
+
+                    <ol class="section-order-project__list">
+                        <li>
+                            Передаем всю необходимую документацию.
+                        </li>
+                        <li>
+                            Осуществляем архитектурный надзор.
+                        </li>
+                        <li>
+                            Получаем итоговую оплату.
+                        </li>
+                        <li>
+                            Передаем закрывающие документы.
+                        </li>
+                    </ol>
+                    <!-- /.section-order-project__list -->
+                </div>
+                <!-- /.section-order-project__block-info -->
+
+                <div class="section-order-project__block-img section-order-project__block-img--display-none-mobile">
+                    <img loading="lazy" src="img/order-project-block-5.webp" alt="picture">
+                </div>
+                <!-- /.section-order-project__block-img section-order-project__block-img--display-none-mobile -->
+
+                <div class="section-order-project__block-img section-order-project__block-img--mobile">
+                    <img loading="lazy" src="img/order-project-block-5-1.webp" alt="picture">
+                </div>
+                <!-- /.section-order-project__block-img section-order-project__block-img--mobile -->
+
+                <div class="section-order-project__hor-line section-order-project__hor-line--bottom"></div>
+                <!-- /.section-order-project__hor-line section-order-project__hor-line--bottom -->
+
+            </div>
+            <!-- /.section-order-project__block-wrap -->
+        </div>
+        <!-- /.section-order-project__block -->
+
+    </div>
+    <!-- /.section-order-project__blocks -->
+
+</section>
+<!-- /.section-order-project -->
+
+    <!-- <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="libs/before/before-after.min.js"></script> -->
+
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/paralax/simpleParallax.min.js"></script>
+
+    <script src="js/vendor.js"></script>
+    <script src="libs/wow/wow.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

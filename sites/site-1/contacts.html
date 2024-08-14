@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Simple</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="stylesheet" href="css/main.min.css?ver=0.0.44">
+  <!-- <link rel="stylesheet" href="libs/before/before-after.css"> -->
+
+  <!-- <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css"> -->
+
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+
+  <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <header class="header-new header-new--black">
+
+    <div class="header-new__wrap">
+
+        <a class="header-new__logo" href="#">
+            <svg>
+                <use xlink:href="img/sprites/multi.svg#logo"></use>
+            </svg>
+        </a>
+        <!-- /.header-new__logo -->
+
+        <div class="header-new__overflow">
+            <div class="header-new__scroll">
+                <div class="header-new__blocks">
+
+                    <div class="header-new__block header-new__block--menu">
+                        <nav class="header-new-menu">
+                            <ul class="header-new-menu__list">
+
+                                <li
+                                    class="header-new-menu__list-item header-new-menu__list-item--arrow js-header-new-menu-sub-btn">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        <span>
+                                            Услуги
+                                        </span>
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-chevron-down"></use>
+                                        </svg>
+                                    </a>
+                                    <!-- /.header-new-menu__list-link -->
+
+                                    <div class="header-new-menu-sub">
+                                        <div class="header-new-menu-sub__wrap">
+                                            <div class="header-new-menu-sub__blocks">
+                                                <div class="header-new-menu-sub__block">
+                                                    <div class="header-new-menu-sub__title">
+                                                        Услуги
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__title -->
+                                                    <ul class="header-new-menu-sub__list">
+                                                        <li>
+                                                            <a href="#">
+                                                                Индивидуальное<br>
+                                                                проектирование
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- /.header-new-menu-sub__list -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block -->
+
+                                                <div class="header-new-menu-sub__block">
+                                                    <div class="header-new-menu-sub__title">
+                                                        Решения
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__title -->
+                                                    <ul class="header-new-menu-sub__list">
+                                                        <li>
+                                                            <a href="#">
+                                                                Архитектурное<br>
+                                                                проектирование
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Эскизный проект
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Архитектурные решения
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Конструктивные решения
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Инженерный проект
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Отопление
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Водоснабжение и Канализация
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Вентиляция
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Газоснабжение
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Электроснабжение
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- /.header-new-menu-sub__list -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block -->
+                                                <div class="header-new-menu-sub__block header-new-menu-sub__block--img">
+                                                    <div class="header-new-menu-sub__block-img">
+                                                        <img loading="lazy" src="img/about-footer-2.webp" alt="picture">
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-img -->
+                                                    <div class="header-new-menu-sub__block-title">
+                                                        Заготовленый текст
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-title -->
+                                                    <div class="header-new-menu-sub__block-text">
+                                                        Давно выяснено, что при оценке дизайна и композиции читаемый
+                                                        текст
+                                                        мешает
+                                                        сосредоточиться.
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-text -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block header-new-menu-sub__block--img -->
+                                            </div>
+                                            <!-- /.header-new-menu-sub__blocks -->
+                                        </div>
+                                        <!-- /.header-new-menu-sub__wrap -->
+                                    </div>
+                                    <!-- /.header-new-menu-sub -->
+
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                                <li class="header-new-menu__list-item">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        Проекты Домов
+                                    </a>
+                                    <!-- /.header-new-menu__list-link -->
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                                <li class="header-new-menu__list-item">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        Цены
+                                    </a>
+                                    <!-- /.header-new-menu__list-link -->
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                                <li
+                                    class="header-new-menu__list-item header-new-menu__list-item--arrow js-header-new-menu-sub-btn">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        <span>
+                                            Бюро
+                                        </span>
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-chevron-down"></use>
+                                        </svg>
+                                    </a>
+
+                                    <!-- /.header-new-menu__list-link -->
+                                    <div class="header-new-menu-sub">
+                                        <div class="header-new-menu-sub__wrap">
+                                            <div class="header-new-menu-sub__blocks">
+
+                                                <div class="header-new-menu-sub__block">
+                                                    <div class="header-new-menu-sub__title">
+                                                        Бюро
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__title -->
+                                                    <ul class="header-new-menu-sub__list">
+                                                        <li>
+                                                            <a href="#">
+                                                                О нас
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Преимущества
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Сотрудники
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Новости
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Вакансии
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Сотрудничество
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Реквизиты
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- /.header-new-menu-sub__list -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block -->
+                                                <div class="header-new-menu-sub__block header-new-menu-sub__block--img">
+                                                    <div class="header-new-menu-sub__block-img">
+                                                        <img loading="lazy" src="img/contact-slider-1.webp"
+                                                            alt="picture">
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-img -->
+                                                    <div class="header-new-menu-sub__block-title">
+                                                        Заготовленый текст
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-title -->
+                                                    <div class="header-new-menu-sub__block-text">
+                                                        Давно выяснено, что при оценке дизайна и композиции читаемый
+                                                        текст
+                                                        мешает
+                                                        сосредоточиться.
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-text -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block header-new-menu-sub__block--img -->
+                                            </div>
+                                            <!-- /.header-new-menu-sub__blocks -->
+                                        </div>
+                                        <!-- /.header-new-menu-sub__wrap -->
+                                    </div>
+                                    <!-- /.header-new-menu-sub -->
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                            </ul>
+                            <!-- /.header-new-menu__list -->
+                        </nav>
+                        <!-- /.header-new__menu -->
+                    </div>
+                    <!-- /.header-new__block -->
+
+                    <div class="header-new__block header-new__block--info">
+                        <div class="header-new-info">
+                            <div class="header-new-info__items">
+
+                                <div class="header-new-info__item">
+                                    <a class="header-new-info__tel" href="tel:+74993472705">
+                                        +7 (499) 347-27-05
+                                    </a>
+                                    <!-- /.header-new-info__tel -->
+                                </div>
+                                <!-- /.header-new-info__item -->
+
+                                <div class="header-new-info__item header-new-info__item--social">
+                                    <div class="header-new-info-social">
+                                        <ul class="header-new-info-social__list">
+                                            <li>
+                                                <a href="#">
+                                                    <svg>
+                                                        <use xlink:href="img/sprites/multi.svg#icon-header-mail"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <svg>
+                                                        <use xlink:href="img/sprites/multi.svg#icon-whatsapp"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <svg>
+                                                        <use xlink:href="img/sprites/multi.svg#icon-telegram"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.header-new-info-social__list -->
+                                    </div>
+                                    <!-- /.header-new-info-social -->
+                                </div>
+                                <!-- /.header-new-info__item header-new-info__item-social -->
+
+                                <div class="header-new-info__item header-new-info__item--btn">
+                                    <button class="header-new__btn">
+                                        <span>
+                                            Перезвоните Мне
+                                        </span>
+                                    </button>
+                                    <!-- /.header-new-info__btn -->
+                                </div>
+                                <!-- /.header-new-info__item header-new-info__item--btn -->
+
+                            </div>
+                            <!-- /.header-new-info__items -->
+                        </div>
+                        <!-- /.header-new-info -->
+
+                    </div>
+                    <!-- /.header-new__block -->
+
+                </div>
+                <!-- /.header-new__blocks -->
+            </div>
+            <!-- /.header-new__scroll -->
+        </div>
+        <!-- /.header-new__overflow -->
+
+        <button class="header-new-hamburger__btn">
+            <div class="header-new-hamburger__btn-wrap">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- /.header-new-hamburger__btn-wrap -->
+        </button>
+        <!-- /.header-new-hamburger__btn -->
+
+    </div>
+    <!-- /.header-new__wrap -->
+
+</header>
+<!-- /.header-new -->
+
+    <!-- 
+        Обертка. 
+        Сделанно под SEO. 
+    -->
+    <section class="section-contact">
+
+        <div class="section-contact__wrap">
+
+            <div class="section-contact__bricks">
+
+                <div class="section-contact__brick">
+
+    <div class="section-contact__blocks">
+
+        <div class="section-contact__block">
+            <h1 class="section-contact__title">
+                Контакты
+            </h1>
+            <!-- /.section-contact__title -->
+        </div>
+        <!-- /.section-contact__block -->
+        <div class="section-contact__block">
+            <div class="section-contact__items">
+
+                <div class="section-contact__items-wrap">
+                    <div class="section-contact__item">
+                        <h2 class="section-contact__item-title">
+                            Офис
+                        </h2>
+                        <!-- /.section-contact__item-title -->
+                        <ul class="section-contact__item-list">
+                            <li>
+                                235651 Россия, г. Москва,<br>
+                                Мясницкая, 13, стр. 18
+                            </li>
+                        </ul>
+                        <!-- /.section-contact__item-list -->
+                    </div>
+                    <!-- /.section-contact__item -->
+                    <div class="section-contact__item">
+                        <h2 class="section-contact__item-title">
+                            Телефон
+                        </h2>
+                        <!-- /.section-contact__item-title -->
+                        <ul class="section-contact__item-list">
+                            <li>
+                                <a href="tel:+74993472705">
+                                    +7 (499) 347-27-05
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.section-contact__item-list -->
+                    </div>
+                    <!-- /.section-contact__item -->
+                </div>
+                <!-- /.section-contact__items-wrap -->
+
+                <div class="section-contact__items-wrap">
+                    <div class="section-contact__item">
+                        <h2 class="section-contact__item-title">
+                            Почта
+                        </h2>
+                        <!-- /.section-contact__item-title -->
+                        <ul class="section-contact__item-list">
+                            <li>
+                                <a href="mailto:info@arhitectura.ru">
+                                    info@arhitectura.ru
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.section-contact__item-list -->
+                    </div>
+                    <!-- /.section-contact__item -->
+                    <div class="section-contact__item">
+                        <h2 class="section-contact__item-title">
+                            Время работы
+                        </h2>
+                        <!-- /.section-contact__item-title -->
+                        <ul class="section-contact__item-list">
+                            <li>
+                                ПН-ПТ с 10.00-20.00
+                            </li>
+                        </ul>
+                        <!-- /.section-contact__item-list -->
+                    </div>
+                    <!-- /.section-contact__item -->
+                </div>
+                <!-- /.section-contact__items-wrap -->
+
+                <div class="section-contact__items-wrap">
+                    <div class="section-contact__item">
+                        <h2 class="section-contact__item-title">
+                            Детали
+                        </h2>
+                        <!-- /.section-contact__item-title -->
+                        <ol class="section-contact__item-list section-contact__item-list--num">
+                            <li>
+                                Перед приездом в офис необходимо заранее сообщить о своем визите, для заказа пропуска
+                            </li>
+                            <li>
+                                На территории есть бесплатная парковка
+                            </li>
+                            <li>
+                                От станции метро Чистые пруды идти 5 минут
+                            </li>
+                        </ol>
+                        <!-- /.section-contact__item-list section-contact__item-list--num -->
+                    </div>
+                    <!-- /.section-contact__item -->
+                    <div class="section-contact__item">
+                        <h2 class="section-contact__item-title">
+                            Мессенджеры
+                        </h2>
+                        <!-- /.section-contact__item-title -->
+                        <ul class="section-contact__item-list section-contact__item-list--social-btn">
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.section-contact__item-list section-contact__item-list--social-btn -->
+                    </div>
+                    <!-- /.section-contact__item -->
+                </div>
+                <!-- /.section-contact__items-wrap -->
+
+                <div class="section-contact__items-wrap">
+                    <div class="section-contact__item">
+                        <h2 class="section-contact__item-title">
+                            Реквизиты
+                        </h2>
+                        <!-- /.section-contact__item-title -->
+                        <ul class="section-contact__item-list">
+                            <li>
+                                Реквизиты бюро можно посмотреть <a href="#">здесь</a>
+                            </li>
+                        </ul>
+                        <!-- /.section-contact__item-list -->
+                    </div>
+                    <!-- /.section-contact__item -->
+                </div>
+                <!-- /.section-contact__items-wrap -->
+
+            </div>
+            <!-- /.section-contact__items -->
+        </div>
+        <!-- /.section-contact__block -->
+
+    </div>
+    <!-- /.section-contact__blocks -->
+
+</div>
+<!-- /.section-contact__brick -->
+                
+                <div class="section-contact__brick">
+    <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A62ba9ed189ed957ddb640a9f4841b8f1caa9e1708b45b3c5d6d8422c025d9fa2&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+</div>
+<!-- /.section-contact__brick -->
+
+                <div class="section-contact__brick">
+
+    <div class="section-contact-slider__title">
+        Офис
+    </div>
+    <!-- /.section-contact__title -->
+
+    <div class="section-contact-slider">
+
+        <div class="section-contact-slider__swiper">
+            <div class="swiper-wrapper section-contact-slider__wrapper">
+
+                <div class="swiper-slide section-contact-slider__slide">
+                    <div class="section-contact-slider__slide-img">
+                        <img loading="lazy" src="img/contact-slider-1.webp" alt="picture">
+                    </div>
+                    <!-- /.section-contact-slider__slide-img -->
+                </div>
+                <!-- /.section-contact-slider__slide -->
+                <div class="swiper-slide section-contact-slider__slide">
+                    <div class="section-contact-slider__slide-img">
+                        <img loading="lazy" src="img/contact-slider-2.webp" alt="picture">
+                    </div>
+                    <!-- /.section-contact-slider__slide-img -->
+                </div>
+                <!-- /.section-contact-slider__slide -->
+                <div class="swiper-slide section-contact-slider__slide">
+                    <div class="section-contact-slider__slide-img">
+                        <img loading="lazy" src="img/contact-slider-3.webp" alt="picture">
+                    </div>
+                    <!-- /.section-contact-slider__slide-img -->
+                </div>
+                <!-- /.section-contact-slider__slide -->
+
+            </div>
+            <!-- /.section-contact-slider__wrapper -->
+        </div>
+        <!-- /.section-contact-slider__swiper -->
+
+        <div class="section-contact-slider__blocks">
+            <div class="section-contact-slider__block">
+                <div class="section-contact-slider__pagination"></div>
+            </div>
+            <!-- /.section-contact-slider__block -->
+            <div class="section-contact-slider__block">
+                <div class="section-contact-slider__arrows">
+                    <div class="section-contact-slider__prev">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-slider-contact-arrow-right"></use>
+                        </svg>
+                    </div>
+                    <!-- /.section-contact-slider__prev -->
+                    <div class="section-contact-slider__next">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-slider-contact-arrow-right"></use>
+                        </svg>
+                    </div>
+                    <!-- /.section-contact-slider__next -->
+                </div>
+                <!-- /.section-contact-slider__arrows -->
+            </div>
+            <!-- /.section-contact-slider__block -->
+        </div>
+        <!-- /.section-contact-slider__blocks -->
+
+    </div>
+    <!-- /.section-contact__slider -->
+
+</div>
+<!-- /.section-contact__brick -->
+                
+                <!-- Переиспользуется существующая форма, вставить готовую из WP.
+                    !НО - Изменен заголовок с - "С чего начать?" на "Остались вопросы?";
+                    По аналогии изменен подзаголовок.
+                -->
+                <div class="section-contact__brick">
+    <div class="section-callback-form">
+        <div class="section-callback-form__wrap wrap">
+            <div class="section-callback-form__head">
+                <div class="section-callback-form__title">
+                    Остались вопросы?
+                </div>
+                <!-- /.section-callback-form__title -->
+                <p class="section-callback-form__text">
+                    Оставьте заявку и мы вам перезвоним через 15 минут.
+                </p>
+                <!-- /.section-callback-form__text -->
+            </div>
+            <!-- /.section-callback-form__head -->
+            <form action="" class="section-callback-form__form callback-form">
+                <div class="callback-form__line">
+                    <label for="callback-name" class="callback-form__label">Имя</label>
+                    <!-- /.callback-form__label --><input type="text" class="callback-form__input" placeholder=""
+                        id="callback-name">
+                </div>
+                <!-- /.callback-form__line -->
+                <div class="callback-form__line">
+                    <label for="callback-phone" class="callback-form__label">Телефон</label>
+                    <!-- /.callback-form__label --><input type="text" class="callback-form__input" placeholder=""
+                        id="callback-phone">
+                </div>
+                <!-- /.callback-form__line -->
+                <button class="callback-form__btn">Отправить заявку</button>
+                <!-- /.section-projects__show-btn -->
+                <p class="callback-form__help">Нажимая на кнопку, вы соглашаетесь с политикой защиты персональной
+                    информации.</p>
+            </form>
+            <!-- /.section-callback-form__form callback-form -->
+        </div>
+        <!-- /.section-callback-form__wrap wrap -->
+    </div>
+    <!-- /.section-callback-form -->
+</div>
+<!-- /.section-contact__brick -->
+
+            </div>
+            <!-- /.section-contact__bricks -->
+
+        </div>
+        <!-- /.section-contact__wrap -->
+
+    </section>
+    <!-- /.section-contact -->
+
+    <!-- <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="libs/before/before-after.min.js"></script> -->
+
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/paralax/simpleParallax.min.js"></script>
+
+    <script src="js/vendor.js"></script>
+    <script src="libs/wow/wow.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

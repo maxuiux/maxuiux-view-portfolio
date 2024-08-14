@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Simple</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="stylesheet" href="css/main.min.css?ver=0.0.44">
+  <!-- <link rel="stylesheet" href="libs/before/before-after.css"> -->
+
+  <!-- <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css"> -->
+
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+
+  <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+
+  <!-- 
+  Страница для примера, будет удалена в будущем,
+  показ, наполнения контента в блоке section-animation
+  -->
+
+  <header class="header-white-fon">
+  <div class="header-mob-menu">
+    <ul class="header-mob-nav-menu">
+      <li><a href="#project" class="anim-header-mob-menu">Портфолио</a></li>
+      <li><a href="#tarif" class="anim-header-mob-menu">Стоимость и услуги</a></li>
+      <li><a href="#care" class="anim-header-mob-menu">Преимущества</a></li>
+      <li><a href="#about_us" class="anim-header-mob-menu">О нас</a></li>
+    </ul>
+    <div class="header-mob-menu-contacts">
+      <p class="header-mob-menu-contacts-title">
+        <span class="anim-header-mob-menu">Контактная информация</span>
+      </p>
+      <a class="header-mob-menu-contacts-tel anim-header-mob-menu" href="tel:+74993472705">
+        +7 (499) 347-27-05
+      </a>
+      <p class="header-mob-menu-contacts-address">
+        <span class="anim-header-mob-menu">г. Москва, ул. Мясницкая, д. 13, стр. 18</span>
+      </p>
+      <p class="header-mob-menu-contacts-title">
+        <span class="anim-header-mob-menu">Электронная почта</span>
+      </p>
+      <a class="header-mob-menu-contacts-email anim-header-mob-menu" href="mailto:info@arhitectura.ru">
+        info@arhitectura.ru
+      </a>
+    </div>
+  </div>
+
+  <div class="header wrap-ext">
+    <div class="header-e e1">
+      <a class="logo" href="/">
+        <svg>
+          <use xlink:href="img/sprites/multi.svg#logo"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="header-e e2">
+      <li><a href="#project">Портфолио</a></li>
+      <li><a href="#tarif">Стоимость и услуги</a></li>
+      <li><a href="#care">Преимущества</a></li>
+      <li><a href="#about_us">О нас</a></li>
+    </ul>
+
+    <div class="header-e e3">
+      <div class="header-tel-time">
+        <a class="header-tel" href="tel:+7(499)347-27-05">+7 (499) 347-27-05</a>
+        <div class="header-time">Москва, ул.Мясницкая, д.13, стр.18</div>
+      </div>
+
+      <div class="but1" onclick="show_popup_request_call()">
+        <div class="but1-text">
+          Перезвоните мне
+        </div>
+      </div>
+
+      <div class="header-hamburget">
+        <div class="header-hamburget-line e1"></div>
+        <div class="header-hamburget-line e2"></div>
+        <div class="header-hamburget-line e3"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <section class="section-intro">
+    <div class="section-intro__wrap">
+        <h1 class="section-intro__title">
+            <div class="section-intro__title-wrap section-intro__title-wrap--grid-1">
+                <span>
+                    Архитектурное
+                </span>
+                <span>
+                    <img loading="lazy" src="img/intro-2.webp" alt="picture">
+                </span>
+            </div>
+            <!-- /.section-intro__title-wrap section-intro__title-wrap--grid-1 -->
+            <div class="section-intro__title-wrap section-intro__title-wrap--grid-2">
+                <span>
+                    проектирование
+                </span>
+                <span>
+                    <img loading="lazy" src="img/intro-2.webp" alt="picture">
+                </span>
+                <span>
+                    домов
+                </span>
+                <span>
+                    <img loading="lazy" src="img/intro-1.webp" alt="picture">
+                </span>
+            </div>
+            <!-- /.section-intro__title-wrap section-intro__title-wrap--grid-2 -->
+            <div class="section-intro__title-wrap section-intro__title-wrap--grid-3">
+                <span>
+                    <img loading="lazy" src="img/intro-1.webp" alt="picture">
+                </span>
+                <span>
+                    любой
+                </span>
+                <span>
+                    <img loading="lazy" src="img/intro-1.webp" alt="picture">
+                </span>
+                <span>
+                    сложности
+                </span>
+            </div>
+            <!-- /.section-intro__title-wrap section-intro__title-wrap--grid-3 -->
+        </h1>
+        <!-- /.section-intro__title -->
+        <div class="section-intro__order">
+            <div class="section-intro__order-wrap">
+                <svg>
+                    <use xlink:href="img/sprites/multi.svg#icon-check"></use>
+                </svg>
+                <span>
+                    <!-- 60 дней BIM проектирование  -->
+                    От 1000 руб/м2 и 25 дней
+                </span>
+            </div>
+            <!-- /.section-intro__order-wrap -->
+            <div class="section-intro__order-btn">
+                <span>
+                    Заказать
+                </span>
+            </div>
+            <!-- /.section-intro__order-btn -->
+        </div>
+        <!-- /.section-intro__order -->
+        <div class="section-intro__subtitle">
+            Мы единая точка входа для всех ваших задач в области анализа, проектирования, дизайна, инженерии и
+            строительства.
+        </div>
+        <!-- /.section-intro__subtitle -->
+    </div>
+    <!-- /.section-intro__wrap -->
+</section>
+<!-- /.section-intro -->
+  <section class="section-dream">
+    <div class="section-dream__wrap">
+        <h2 class="section-dream__title">
+            Красиво, да?
+        </h2>
+        <!-- /.section-dream__title -->
+        <h3 class="section-dream__subtitle">
+            Выполним все этапы архитектурного проектирования, чтобы сделать дом вашей мечты
+        </h3>
+        <!-- /.section-dream__subtitle -->
+    </div>
+    <!-- /.section-dream__wrap -->
+</section>
+<!-- /.section-dream -->
+
+  <!-- Обновленный новый блок с анимацией видео -->
+  <section class="section-animation-head">
+
+    <div class="section-animation-head__blocks">
+
+        <div class="section-animation-head__block section-animation-head__block--bg-color">
+            <ul class="section-animation-head__items">
+                <li class="section-animation-head__item active">
+                    Какие сроки проектирования?
+                </li>
+                <!-- /.section-animation-head__item -->
+                <li class="section-animation-head__item">
+                    Из чего лучше сделать фасад?
+                </li>
+                <!-- /.section-animation-head__item -->
+                <li class="section-animation-head__item">
+                    Как правильно разместить дом?
+                </li>
+                <!-- /.section-animation-head__item -->
+                <li class="section-animation-head__item">
+                    Бюджет на реализацию
+                </li>
+                <!-- /.section-animation-head__item -->
+                <li class="section-animation-head__item">
+                    Планировочное решение
+                </li>
+                <!-- /.section-animation-head__item -->
+            </ul>
+            <!-- /.section-animation-head__items -->
+        </div>
+        <!-- /.section-animation-head__block -->
+
+        <div class="section-animation-head__block">
+            <div class="section-animation-head-info">
+                <div class="section-animation-head-info__num">
+                    01.
+                </div>
+                <!-- /.section-animation-head-info__num -->
+                <div class="section-animation-head-info__title">
+                    Знакомство
+                </div>
+                <!-- /.section-animation-head-info__title -->
+                <div class="section-animation-head-info__text">
+                    Узнаем, какие у вас есть ожидания от проекта и пожелания к будущему дому, как вы планируете
+                    использовать участок. Бюджет на строительство, площадь, размеры внутренних помещений. Изучим
+                    привычки вашей семьи и логику использования пространств.
+                </div>
+                <!-- /.section-animation-head-info__text -->
+            </div>
+            <!-- /.section-animation-head-info -->
+        </div>
+        <!-- /.section-animation-head__block -->
+
+    </div>
+    <!-- /.section-animation-head__blocks -->
+
+</section>
+<!-- /.section-animation-head -->
+  <!-- 
+      Клон страница section-animation для примера, 
+      будет удалено 
+  -->
+  <section class="section-animation">
+
+    <div class="section-animation__blocks">
+
+        <div class="section-animation__block section-animation__block--video">
+            <video id="video" autoplay="false" playsinline="" muted="" preload="auto">
+                <source src="/libs/video/section-animation-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- /.section-animation__block -->
+
+        <div class="section-animation__block section-animation__block--info">
+
+            <div class="section-animation-info">
+                <div class="section-animation-info__blocks">
+
+                    <div class="section-animation-info__block section-animation-info__block--height-1">
+
+                        <div class="section-animation-info__block-wrap section-animation-info__block-wrap--pc">
+                            <div class="section-animation-info__block-num">
+                                02.
+                            </div>
+                            <!-- /.section-animation-info__block-num -->
+                            <div class="section-animation-info__block-title">
+                                Эскизный проект
+                            </div>
+                            <!-- /.section-animation-info__block-title -->
+                            <div class="section-animation-info__block-text">
+
+                                <div class="section-animation-info-text__items">
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Концепция дома
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Это предварительный дизайн фасадов, с учетом нужной вам стилистики,
+                                            площади,
+                                            этажности, бюджета на строительство. После утверждения концепта, мы
+                                            доработаем
+                                            его в полноценный проект дизайна-фасадов.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Планировочное решение
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Мы продумаем все – логику использования пространства, зонирования,
+                                            расстановку
+                                            мебели, места для хранения. Посоветуем от каких помещений лучше
+                                            отказаться,
+                                            а
+                                            какие изменить, чтобы стало удобно.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Генеральный план участка
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Чтобы логично разместить будущий дом на участке, мы просчитываем
+                                            сценарии
+                                            жизни
+                                            жильцов, учитываем стороны света, карту инсоляций.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            А также:
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <ul class="section-animation-info-text__item-list">
+                                            <li>
+                                                3D Визуализация
+                                            </li>
+                                            <li>
+                                                Документация для строителей
+                                            </li>
+                                        </ul>
+                                        <!-- /.section-animation-info-text__item-list -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                </div>
+                                <!-- /.section-animation-info-text__items -->
+                                <button class="section-animation-info__btn">
+                                    <div class="section-animation-info__btn-text">
+                                        Узнать больше
+                                    </div>
+                                    <!-- /.section-animation-info__btn-text -->
+                                    <div class="section-animation-info__btn-icon">
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-arrow-section-animation-right">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <!-- /.section-animation-info__btn-icon -->
+                                </button>
+                                <!-- /.section-animation-info__btn -->
+                            </div>
+                            <!-- /.section-animation-info__block-text -->
+                        </div>
+                        <!-- /.section-animation-info__block-wrap -->
+                        
+                        <!-- Для изменения количества текста -->
+                        <div class="section-animation-info__block-wrap section-animation-info__block-wrap--mobile">
+                            <div class="section-animation-info__block-num">
+                                02.
+                            </div>
+                            <!-- /.section-animation-info__block-num -->
+                            <div class="section-animation-info__block-title">
+                                Эскизный проект
+                            </div>
+                            <!-- /.section-animation-info__block-title -->
+                            <div class="section-animation-info__block-text">
+
+                                <div class="section-animation-info-text__items">
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Концепция дома
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Дизайн фасадов, с учетом нужной вам стилистики. 
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Планировочное решение
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            С учетом будущего интерьера
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Генеральный план участка
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Размещение дома и вспомогательных строений. 
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            А также:
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <ul class="section-animation-info-text__item-list">
+                                            <li>
+                                                3D Визуализация
+                                            </li>
+                                        </ul>
+                                        <!-- /.section-animation-info-text__item-list -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                </div>
+                                <!-- /.section-animation-info-text__items -->
+                                <button class="section-animation-info__btn">
+                                    <div class="section-animation-info__btn-text">
+                                        Узнать больше
+                                    </div>
+                                    <!-- /.section-animation-info__btn-text -->
+                                    <div class="section-animation-info__btn-icon">
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-arrow-section-animation-right">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <!-- /.section-animation-info__btn-icon -->
+                                </button>
+                                <!-- /.section-animation-info__btn -->
+                            </div>
+                            <!-- /.section-animation-info__block-text -->
+                        </div>
+                        <!-- /.section-animation-info__block-wrap -->
+
+                    </div>
+                    <!-- /.section-animation-info__block -->
+
+                    <div class="section-animation-info__block section-animation-info__block--height-2">
+
+                        <div class="section-animation-info__block-wrap">
+                            <div class="section-animation-info__block-num">
+                                03.
+                            </div>
+                            <!-- /.section-animation-info__block-num -->
+                            <div class="section-animation-info__block-title">
+                                Проект архитектурных решений
+                            </div>
+                            <!-- /.section-animation-info__block-title -->
+                            <div class="section-animation-info__block-text">
+
+                                <div class="section-animation-info-text__items">
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Дизайн фасадов
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Итоговый архитектурный облик вашего дома разработанный в единичном
+                                            экземпляре, отражающий ваши вкусы в нашем архитектурном прочтении. Наши
+                                            проекты выделяются особенные детали, например, второй свет в гостиной,
+                                            парящая лестница, которые выделят ваш дом.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            3D Визуализации
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            4-5 фотореалистичных 3d-визуализации дома со всех сторон в разное время
+                                            суток. Для реализации фасадов “как на картинке” у вас будет смета всех
+                                            материалов, которые использовались в проекте.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Рабочая документация
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Подготовим документацию для строителей и получения разрешения на
+                                            строительство:
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                        <ul class="section-animation-info-text__item-list">
+                                            <li>
+                                                Разбивочные и кладочные планы
+                                            </li>
+                                            <li>
+                                                Разрезы дома с высотными отметками
+                                            </li>
+                                            <li>
+                                                Фасады в необходимом количестве
+                                            </li>
+                                            <li>
+                                                План кровли с водоотводом
+                                            </li>
+                                            <li>
+                                                Узлы, сечения, детали
+                                            </li>
+                                        </ul>
+                                        <!-- /.section-animation-info-text__item-list -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            А также:
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <ul class="section-animation-info-text__item-list">
+                                            <li>
+                                                Ведомости материалов
+                                            </li>
+                                            <li>
+                                                Спецификация перекрытий
+                                            </li>
+                                        </ul>
+                                        <!-- /.section-animation-info-text__item-list -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                </div>
+                                <!-- /.section-animation-info-text__items -->
+                                <button class="section-animation-info__btn">
+                                    <div class="section-animation-info__btn-text">
+                                        Узнать больше
+                                    </div>
+                                    <!-- /.section-animation-info__btn-text -->
+                                    <div class="section-animation-info__btn-icon">
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-arrow-section-animation-right">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <!-- /.section-animation-info__btn-icon -->
+                                </button>
+                                <!-- /.section-animation-info__btn -->
+                            </div>
+                            <!-- /.section-animation-info__block-text -->
+                        </div>
+                        <!-- /.section-animation-info__block-wrap -->
+
+                    </div>
+                    <!-- /.section-animation-info__block -->
+
+                    <div class="section-animation-info__block section-animation-info__block--height-3">
+
+                        <div class="section-animation-info__block-wrap">
+                            <div class="section-animation-info__block-num">
+                                04.
+                            </div>
+                            <!-- /.section-animation-info__block-num -->
+                            <div class="section-animation-info__block-title">
+                                Конструктивный проект
+                            </div>
+                            <!-- /.section-animation-info__block-title -->
+                            <div class="section-animation-info__block-text">
+
+                                <div class="section-animation-info-text__items">
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Метод строительства
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Определим оптимальный тип материалов и метод ведения строительных работ,
+                                            исходя
+                                            из индивидуальных особенностей вашего проекта, бюджета, нагрузок, грунта и
+                                            климата.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Тип фундамента
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Подскажем, какой тип фундамента выбрать в вашем случае, исходя из
+                                            геологического
+                                            анализа почвы и климата. Подготовим план фундамента со схемами котлована,
+                                            опалубки, разрезами и узлами.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Характеристики стен
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Определим оптимальное расположение несущие стены, опорных элементов и
+                                            колонны. Рассчитаем нагрузку на все узлы и предложим решения для
+                                            оптимизации.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Расчет нагрузок
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Сделаем расчет прочности и устойчивости дома, рассчитаем уровень
+                                            теплопроводности. Все расчеты происходят в специализированных программах и
+                                            на основании методик, изложенных в нормативных документах (СП, СНиП)
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            А также:
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <ul class="section-animation-info-text__item-list">
+                                            <li>
+                                                Смета материалов
+                                            </li>
+                                            <li>
+                                                Вид кровли
+                                            </li>
+                                        </ul>
+                                        <!-- /.section-animation-info-text__item-list -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                </div>
+                                <!-- /.section-animation-info-text__items -->
+                                <button class="section-animation-info__btn">
+                                    <div class="section-animation-info__btn-text">
+                                        Узнать больше
+                                    </div>
+                                    <!-- /.section-animation-info__btn-text -->
+                                    <div class="section-animation-info__btn-icon">
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-arrow-section-animation-right">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <!-- /.section-animation-info__btn-icon -->
+                                </button>
+                                <!-- /.section-animation-info__btn -->
+                            </div>
+                            <!-- /.section-animation-info__block-text -->
+                        </div>
+                        <!-- /.section-animation-info__block-wrap -->
+
+                    </div>
+                    <!-- /.section-animation-info__block -->
+
+                    <div class="section-animation-info__block">
+
+                        <div class="section-animation-info__block-wrap">
+                            <div class="section-animation-info__block-num">
+                                05.
+                            </div>
+                            <!-- /.section-animation-info__block-num -->
+                            <div class="section-animation-info__block-title">
+                                Инженерный проект
+                            </div>
+                            <!-- /.section-animation-info__block-title -->
+                            <div class="section-animation-info__block-text">
+
+                                <div class="section-animation-info-text__items">
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Метод строительства
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Определим оптимальный тип материалов и метод ведения строительных работ,
+                                            исходя
+                                            из индивидуальных особенностей вашего проекта, бюджета, нагрузок, грунта и
+                                            климата.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Тип фундамента
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Подскажем, какой тип фундамента выбрать в вашем случае, исходя из
+                                            геологического
+                                            анализа почвы и климата. Подготовим план фундамента со схемами котлована,
+                                            опалубки, разрезами и узлами.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Характеристики стен
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Определим оптимальное расположение несущие стены, опорных элементов и
+                                            колонны. Рассчитаем нагрузку на все узлы и предложим решения для
+                                            оптимизации.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Расчет нагрузок
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Сделаем расчет прочности и устойчивости дома, рассчитаем уровень
+                                            теплопроводности. Все расчеты происходят в специализированных программах и
+                                            на основании методик, изложенных в нормативных документах (СП, СНиП)
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            А также:
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <ul class="section-animation-info-text__item-list">
+                                            <li>
+                                                Смета материалов
+                                            </li>
+                                            <li>
+                                                Вид кровли
+                                            </li>
+                                        </ul>
+                                        <!-- /.section-animation-info-text__item-list -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                </div>
+                                <!-- /.section-animation-info-text__items -->
+                                <button class="section-animation-info__btn">
+                                    <div class="section-animation-info__btn-text">
+                                        Узнать больше
+                                    </div>
+                                    <!-- /.section-animation-info__btn-text -->
+                                    <div class="section-animation-info__btn-icon">
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-arrow-section-animation-right">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <!-- /.section-animation-info__btn-icon -->
+                                </button>
+                                <!-- /.section-animation-info__btn -->
+                            </div>
+                            <!-- /.section-animation-info__block-text -->
+                        </div>
+                        <!-- /.section-animation-info__block-wrap -->
+
+                    </div>
+                    <!-- /.section-animation-info__block -->
+
+                    <div class="section-animation-info__block">
+
+                        <div class="section-animation-info__block-wrap">
+                            <div class="section-animation-info__block-num">
+                                06.
+                            </div>
+                            <!-- /.section-animation-info__block-num -->
+                            <div class="section-animation-info__block-title">
+                                Дизайн-проект
+                            </div>
+                            <!-- /.section-animation-info__block-title -->
+                            <div class="section-animation-info__block-text">
+
+                                <div class="section-animation-info-text__items">
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Метод строительства
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Определим оптимальный тип материалов и метод ведения строительных работ,
+                                            исходя
+                                            из индивидуальных особенностей вашего проекта, бюджета, нагрузок, грунта и
+                                            климата.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Тип фундамента
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Подскажем, какой тип фундамента выбрать в вашем случае, исходя из
+                                            геологического
+                                            анализа почвы и климата. Подготовим план фундамента со схемами котлована,
+                                            опалубки, разрезами и узлами.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Характеристики стен
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Определим оптимальное расположение несущие стены, опорных элементов и
+                                            колонны. Рассчитаем нагрузку на все узлы и предложим решения для
+                                            оптимизации.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Расчет нагрузок
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Сделаем расчет прочности и устойчивости дома, рассчитаем уровень
+                                            теплопроводности. Все расчеты происходят в специализированных программах и
+                                            на основании методик, изложенных в нормативных документах (СП, СНиП)
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            А также:
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <ul class="section-animation-info-text__item-list">
+                                            <li>
+                                                Смета материалов
+                                            </li>
+                                            <li>
+                                                Вид кровли
+                                            </li>
+                                        </ul>
+                                        <!-- /.section-animation-info-text__item-list -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                </div>
+                                <!-- /.section-animation-info-text__items -->
+                                <button class="section-animation-info__btn">
+                                    <div class="section-animation-info__btn-text">
+                                        Узнать больше
+                                    </div>
+                                    <!-- /.section-animation-info__btn-text -->
+                                    <div class="section-animation-info__btn-icon">
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-arrow-section-animation-right">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <!-- /.section-animation-info__btn-icon -->
+                                </button>
+                                <!-- /.section-animation-info__btn -->
+                            </div>
+                            <!-- /.section-animation-info__block-text -->
+                        </div>
+                        <!-- /.section-animation-info__block-wrap -->
+
+                    </div>
+                    <!-- /.section-animation-info__block -->
+
+                    <div class="section-animation-info__block">
+
+                        <div class="section-animation-info__block-wrap">
+                            <div class="section-animation-info__block-num">
+                                07.
+                            </div>
+                            <!-- /.section-animation-info__block-num -->
+                            <div class="section-animation-info__block-title">
+                                Ландшафтный проект
+                            </div>
+                            <!-- /.section-animation-info__block-title -->
+                            <div class="section-animation-info__block-text">
+
+                                <div class="section-animation-info-text__items">
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Метод строительства
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Определим оптимальный тип материалов и метод ведения строительных работ,
+                                            исходя
+                                            из индивидуальных особенностей вашего проекта, бюджета, нагрузок, грунта и
+                                            климата.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Тип фундамента
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Подскажем, какой тип фундамента выбрать в вашем случае, исходя из
+                                            геологического
+                                            анализа почвы и климата. Подготовим план фундамента со схемами котлована,
+                                            опалубки, разрезами и узлами.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Характеристики стен
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Определим оптимальное расположение несущие стены, опорных элементов и
+                                            колонны. Рассчитаем нагрузку на все узлы и предложим решения для
+                                            оптимизации.
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            Расчет нагрузок
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <div class="section-animation-info-text__item-description">
+                                            Сделаем расчет прочности и устойчивости дома, рассчитаем уровень
+                                            теплопроводности. Все расчеты происходят в специализированных программах и
+                                            на основании методик, изложенных в нормативных документах (СП, СНиП)
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-description -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                    <div class="section-animation-info-text__item">
+                                        <div class="section-animation-info-text__item-title">
+                                            А также:
+                                        </div>
+                                        <!-- /.section-animation-info-text__item-title -->
+                                        <ul class="section-animation-info-text__item-list">
+                                            <li>
+                                                Смета материалов
+                                            </li>
+                                            <li>
+                                                Вид кровли
+                                            </li>
+                                        </ul>
+                                        <!-- /.section-animation-info-text__item-list -->
+                                    </div>
+                                    <!-- /.section-animation-info-text__item -->
+
+                                </div>
+                                <!-- /.section-animation-info-text__items -->
+                                <button class="section-animation-info__btn">
+                                    <div class="section-animation-info__btn-text">
+                                        Узнать больше
+                                    </div>
+                                    <!-- /.section-animation-info__btn-text -->
+                                    <div class="section-animation-info__btn-icon">
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-arrow-section-animation-right">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <!-- /.section-animation-info__btn-icon -->
+                                </button>
+                                <!-- /.section-animation-info__btn -->
+                            </div>
+                            <!-- /.section-animation-info__block-text -->
+                        </div>
+                        <!-- /.section-animation-info__block-wrap -->
+
+                    </div>
+                    <!-- /.section-animation-info__block -->
+
+                </div>
+                <!-- /.section-animation-info__blocks -->
+            </div>
+            <!-- /.section-animation-info -->
+
+        </div>
+        <!-- /.section-animation__block -->
+
+    </div>
+    <!-- /.section-animation__blocks -->
+
+</section>
+<!-- /.section-animation -->
+
+  <div class="wrap"></div>
+<section class="section-advantages">
+    <div class="section-advantages__bg">
+        <div class="section-advantages__wrap">
+            <h2 class="section-advantages__title">
+                В итоге вы получите полный проект дома со всеми разделами
+            </h2>
+            <!-- /.section-advantages__title -->
+        </div>
+        <!-- /.section-advantages__wrap -->
+        <div class="section-advantages__wrap-2">
+            <div class="section-advantages__scroll">
+                <!-- scroll-adaptive - для реализации адаптива -->
+                <img loading="lazy" class="section-advantages__scroll-adaptive"
+                    src="img/advantages-scroll-adaptive.webp" alt="">
+                <!-- /.section-advantages__scroll-adaptive -->
+                <img loading="lazy" class="section-advantages__scroll-img js-paralax-left"
+                    src="img/advantages-scroll.png" alt="picture">
+                <!-- /.section-advantages__scroll-img -->
+            </div>
+            <!-- /.section-advantages__scroll -->
+        </div>
+        <!-- /.section-advantages__wrap-2 -->
+        <div class="section-advantages__wrap">
+            <div class="section-advantages__items">
+                <div class="section-advantages__item">
+                    <div class="section-advantages__item-title">
+                        Раскроется потенциал дома
+                    </div>
+                    <!-- /.section-advantages__item-title -->
+                    <div class="section-advantages__item-subtitle">
+                        В проектировании домов - миллион нюансов. Мы понимаем, как сделать удобную планировку,
+                        красивый
+                        фасад,
+                        ландшафт таким образом, чтобы вы наслаждались жизнь в доме.
+                    </div>
+                    <!-- /.section-advantages__item-subtitle -->
+                </div>
+                <!-- /.section-advantages__item -->
+                <div class="section-advantages__item">
+                    <div class="section-advantages__item-title">
+                        Самое главное
+                    </div>
+                    <!-- /.section-advantages__item-title -->
+                    <div class="section-advantages__item-subtitle">
+                        Не придется объяснять “на пальцах” строителям, где расположить окно или въезд в гараж,
+                        какая
+                        должна
+                        быть
+                        нагрузка у перекрытий или длина пролетов. У вас будет вся документация для ведения
+                        строительных
+                        работ.
+                    </div>
+                    <!-- /.section-advantages__item-subtitle -->
+                </div>
+                <!-- /.section-advantages__item -->
+                <div class="section-advantages__item">
+                    <div class="section-advantages__item-title">
+                        Снизится стоимость
+                    </div>
+                    <!-- /.section-advantages__item-title -->
+                    <div class="section-advantages__item-subtitle">
+                        Стоимость строительства будет снижена. В 80% случаях, итоговая стоимость строительства
+                        дома по
+                        нашему
+                        проекту снижается, благодаря применяемым архитектурным и дизайнерским решениям.
+                    </div>
+                    <!-- /.section-advantages__item-subtitle -->
+                </div>
+                <!-- /.section-advantages__item -->
+            </div>
+            <!-- /.section-advantages__items -->
+        </div>
+        <!-- /.section-advantages__wrap -->
+    </div>
+    <!-- /.section-advantages__bg -->
+</section>
+<!-- /. -->
+  <section class="section-start">
+    <div class="section-start__wrap">
+        <h2 class="section-start__title">
+            Получите пример проекта дома на почту
+        </h2>
+        <!-- /.section-start__title -->
+        <form class="section-start__form" action="#">
+            <input class="section-start__input" type="email" placeholder="Введите вашу почту">
+            <!-- /.section-start__input -->
+            <div class="section-start__form-wrap">
+                <button class="section-start__btn">
+                    <span>
+                        Отправить заявку
+                    </span>
+                </button>
+                <!-- /.section-start__btn -->
+            </div>
+            <!-- /.section-start__form-wrap -->
+        </form>
+        <!-- /.section-start__form -->
+        <div class="section-start__stages">
+            <div class="section-start__stages-item">
+                <svg>
+                    <use xlink:href="img/sprites/multi.svg#icon-check"></use>
+                </svg>
+                <span>
+                    Стоимость проектирования от 250 ₽/м<sup>2</sup>
+                </span>
+            </div>
+            <!-- /.section-start__stages-item -->
+            <div class="section-start__stages-item">
+                <svg>
+                    <use xlink:href="img/sprites/multi.svg#icon-check"></use>
+                </svg>
+                <span>
+                    Любая сложность
+                </span>
+            </div>
+            <!-- /.section-start__stages-item -->
+            <div class="section-start__stages-item">
+                <svg>
+                    <use xlink:href="img/sprites/multi.svg#icon-check"></use>
+                </svg>
+                <span>
+                    От 15 дней
+                </span>
+            </div>
+            <!-- /.section-start__stages-item -->
+        </div>
+        <!-- /. -->
+    </div>
+    <!-- /.section-start__wrap -->
+</section>
+<!-- /.section-start -->
+  <section id="myBlock" class="section-rate">
+    <div class="section-rate__wrap">
+        <h2 class="section-rate__title">
+            Стоимость и виды проектной документации
+        </h2>
+        <!-- /.section-rate__title -->
+        <div class="section-rate__items">
+            <div class="section-rate__item">
+                <div class="section-rate-item-full">
+                    <div class="section-rate-item-full__block">
+                        <img loading="lazy" class="section-rate-item-full__img" src="img/rate-1.webp" alt="picture">
+                    </div>
+                    <!-- /.section-rate-item-full__block -->
+                    <div class="section-rate-item-full__block">
+                        <div class="section-rate-item-full__title">
+                            Полный проект
+                        </div>
+                        <!-- /.section-rate-item-full__title -->
+                        <div class="section-rate-item-full__subtitle">
+                            Срок 60 дней
+                        </div>
+                        <!-- /.section-rate-item-full__subtitle -->
+                        <div class="section-rate-item-full__description">
+                            Полный проект дома - это весь цикл услуг от эскиза до выхода на стройку. Каждую часть из
+                            состава
+                            работ можно заказать отдельно.
+                        </div>
+                        <!-- /.section-rate-item-full__description -->
+                    </div>
+                    <!-- /.section-rate-item-full__block -->
+                    <div class="section-rate-item-full__block">
+                        <div class="section-rate-item-full__list-wrap">
+                            <ul class="section-rate-item-full__list">
+                                <div class="section-rate-item-full__list-title">
+                                    Состав работ:
+                                </div>
+                                <!-- /.section-rate-item-full__list-title -->
+                                <li>
+                                    Эскизный проект
+                                </li>
+                                <li>
+                                    Архитектурные решения
+                                </li>
+                                <li>
+                                    Конструктивный проект
+                                </li>
+                                <li>
+                                    Инженерный проект
+                                </li>
+                                <li>
+                                    Дизайн-интерьера
+                                </li>
+                            </ul>
+                            <!-- /.section-rate-item-full__list -->
+                            <ul class="section-rate-item-full__list">
+                                <div class="section-rate-item-full__list-title">
+                                    По согласованию:
+                                </div>
+                                <!-- /.section-rate-item-full__list -->
+                                <li>
+                                    Архитектурный надзор
+                                </li>
+                                <li>
+                                    Ландшафтный дизайн
+                                </li>
+                            </ul>
+                            <!-- /.section-rate-item-full__list -->
+                        </div>
+                        <!-- /.section-rate-item-full__list-wrap -->
+                    </div>
+                    <!-- /.section-rate-item-full__block -->
+                    <div class="section-rate-item-full__block">
+                        <div class="section-rate-item-full__block-title">
+                            Стоимость
+                        </div>
+                        <!-- /.section-rate-item-full__block-title -->
+                        <div class="section-rate-item-full__price">
+                            3000 ₽/м<sup>2</sup>
+                        </div>
+                        <!-- /.section-rate-item-full__price -->
+                        <div class="section-rate-item-full__btn">
+                            <span>
+                                <span>Заказать звонок</span>
+                            </span>
+                        </div>
+                        <!-- /.section-rate-item-full__btn -->
+                    </div>
+                    <!-- /.section-rate-item-full__block -->
+                </div>
+                <!-- /.section-rate-item-full -->
+            </div>
+            <!-- /.section-rate__item -->
+            <div class="section-rate__item">
+                <div class="section-rate__item-title">
+                    Эскизный проект
+                </div>
+                <!-- /.section-rate__item-title -->
+                <div class="section-rate__item-price">
+                    250 ₽/м<sup>2</sup>
+                </div>
+                <!-- /.section-rate__item-price -->
+                <img loading="lazy" class="section-rate__item-img" src="img/rate-2.webp" alt="picture">
+                <!-- /.section-rate__item-img -->
+                <div class="section-rate__list-title">
+                    Состав работ
+                </div>
+                <!-- /.section-rate__list-title -->
+                <ul class="section-rate__item-list">
+                    <li>
+                        Поэтажная планировка дома
+                    </li>
+                    <li>
+                        Дизайн фасадов
+                    </li>
+                    <li>
+                        Ведомость чертежей
+                    </li>
+                    <div class="js-rate-list__wrap">
+                        <li>
+                            Разрезы дома с размерами
+                        </li>
+                        <li>
+                            Высотные отметки
+                        </li>
+                        <li>
+                            3D Визуализации
+                        </li>
+                        <li>
+                            Генеральный план участка
+                        </li>
+                    </div>
+                    <!-- /.js-rate-list__wrap -->
+                </ul>
+                <!-- /.section-rate__item-list -->
+                <button class="js-item-list-btn">
+                    Раскрыть список
+                </button>
+                <!-- /.js-item-list-btn -->
+                <div class="section-rate__item-bottom">
+                    <div class="section-rate__item-btn">
+                        <span>Заказать звонок</span>
+                    </div>
+                    <!-- /.section-rate__item-btn -->
+                    <div class="section-rate__item-subtitle">
+                        Срок 10-15 дней
+                    </div>
+                    <!-- /.section-rate__item-subtitle -->
+                </div>
+                <!-- /.section-rate__item-bottom -->
+            </div>
+            <!-- /.section-rate__item -->
+            <div class="section-rate__item">
+                <div class="section-rate__item-title">
+                    Архитектурные решения
+                </div>
+                <!-- /.section-rate__item-title -->
+                <div class="section-rate__item-price">
+                    250 ₽/м<sup>2</sup>
+                </div>
+                <!-- /.section-rate__item-price -->
+                <img loading="lazy" class="section-rate__item-img" src="img/rate-3.webp" alt="picture">
+                <!-- /.section-rate__item-img -->
+                <div class="section-rate__list-title">
+                    Состав работ
+                </div>
+                <!-- /.section-rate__list-title -->
+                <ul class="section-rate__item-list">
+                    <li>
+                        Расходная ведомость материалов
+                    </li>
+                    <li>
+                        Архитектурные решения
+                    </li>
+                    <li>
+                        Поэтажные планы с экспликацией помещений
+                    </li>
+                    <div class="js-rate-list__wrap">
+                        <li>
+                            Планы перекрытий
+                        </li>
+                        <li>
+                            Отметки уровня пола
+                        </li>
+                        <li>
+                            Документация для стен
+                        </li>
+                        <li>
+                            Планы кровли с водостоками
+                        </li>
+                        <li>
+                            Экспликация отделочных материалов фасадов
+                        </li>
+                        <li>
+                            Монтажные схемы для оконных и дверных проемов
+                        </li>
+                        <li>
+                            Экспликация полов
+                        </li>
+                        <li>
+                            Технико-экономические показатели
+                        </li>
+                    </div>
+                    <!-- /.js-rate-list__wrap -->
+                </ul>
+                <!-- /.section-rate__item-list -->
+                <button class="js-item-list-btn">
+                    Раскрыть список
+                </button>
+                <!-- /.js-item-list-btn -->
+                <div class="section-rate__item-bottom">
+                    <div class="section-rate__item-btn">
+                        <span>Заказать звонок</span>
+                    </div>
+                    <!-- /.section-rate__item-btn -->
+                    <div class="section-rate__item-subtitle">
+                        Срок 10-15 дней
+                    </div>
+                    <!-- /.section-rate__item-subtitle -->
+                </div>
+                <!-- /.section-rate__item-bottom -->
+            </div>
+            <!-- /.section-rate__item -->
+            <div class="section-rate__item">
+                <div class="section-rate__item-title">
+                    Конструктивный проект
+                </div>
+                <!-- /.section-rate__item-title -->
+                <div class="section-rate__item-price">
+                    250 ₽/м<sup>2</sup>
+                </div>
+                <!-- /.section-rate__item-price -->
+                <img loading="lazy" class="section-rate__item-img" src="img/rate-4.webp" alt="picture">
+                <!-- /.section-rate__item-img -->
+                <div class="section-rate__list-title">
+                    Состав работ
+                </div>
+                <!-- /.section-rate__list-title -->
+                <ul class="section-rate__item-list">
+                    <li>
+                        Конструктивные решения
+                    </li>
+                    <li>
+                        Спецификация для фундамента:
+                    </li>
+                    <li>
+                        Спецификация для стен и перекрытий:
+                    </li>
+                    <div class="js-rate-list__wrap">
+                        <li>
+                            Спецификация для кровли:
+                        </li>
+                        <li>
+                            Конструктивные решения для лестниц и террас
+                        </li>
+                        <li>
+                            Схема устройств для вентканалов и дымоходов
+                        </li>
+                        <li>
+                            Развертки для цокольного этажа
+                        </li>
+                        <li>
+                            Схемы и расчет распределения нагрузок
+                        </li>
+                        <li>
+                            Расчет железобетонных конструкций
+                        </li>
+                    </div>
+                    <!-- /.js-rate-list__wrap -->
+                </ul>
+                <!-- /.section-rate__item-list -->
+                <button class="js-item-list-btn">
+                    Раскрыть список
+                </button>
+                <!-- /.js-item-list-btn -->
+                <div class="section-rate__item-bottom">
+                    <div class="section-rate__item-btn">
+                        <span>Заказать звонок</span>
+                    </div>
+                    <!-- /.section-rate__item-btn -->
+                    <div class="section-rate__item-subtitle">
+                        Срок 10-15 дней
+                    </div>
+                    <!-- /.section-rate__item-subtitle -->
+                </div>
+                <!-- /.section-rate__item-bottom -->
+            </div>
+            <!-- /.section-rate__item -->
+            <div class="section-rate__item">
+                <div class="section-rate__item-title">
+                    Инженерный проект
+                </div>
+                <!-- /.section-rate__item-title -->
+                <div class="section-rate__item-price">
+                    250 ₽/м<sup>2</sup>
+                </div>
+                <!-- /.section-rate__item-price -->
+                <img loading="lazy" class="section-rate__item-img" src="img/rate-5.webp" alt="picture">
+                <!-- /.section-rate__item-img -->
+                <div class="section-rate__list-title">
+                    Состав работ
+                </div>
+                <!-- /.section-rate__list-title -->
+                <ul class="section-rate__item-list">
+                    <li>
+                        Проект водоснабжения и канализации
+                    </li>
+                    <li>
+                        Проект отопления и вентиляции
+                    </li>
+                    <li>
+                        Проект электроснабжения и освещения
+                    </li>
+                </ul>
+                <!-- /.section-rate__item-list -->
+                <div class="section-rate__item-bottom">
+                    <div class="section-rate__item-btn">
+                        <span>Заказать звонок</span>
+                    </div>
+                    <!-- /.section-rate__item-btn -->
+                    <div class="section-rate__item-subtitle">
+                        Срок 10-15 дней
+                    </div>
+                    <!-- /.section-rate__item-subtitle -->
+                </div>
+                <!-- /.section-rate__item-bottom -->
+            </div>
+            <!-- /.section-rate__item -->
+            <div class="section-rate__item">
+                <div class="section-rate__item-title">
+                    Дизайн интерьера
+                </div>
+                <!-- /.section-rate__item-title -->
+                <div class="section-rate__item-price">
+                    250 ₽/м<sup>2</sup>
+                </div>
+                <!-- /.section-rate__item-price -->
+                <img loading="lazy" class="section-rate__item-img" src="img/rate-6.webp" alt="picture">
+                <!-- /.section-rate__item-img -->
+                <div class="section-rate__list-title">
+                    Состав работ
+                </div>
+                <!-- /.section-rate__list-title -->
+                <ul class="section-rate__item-list">
+                    <li>
+                        Обмерные чертежи
+                    </li>
+                    <li>
+                        Визуализации помещений
+                    </li>
+                    <li>
+                        Спецификация мебели
+                    </li>
+                    <div class="js-rate-list__wrap">
+                        <li>
+                            Спецификации сантехники
+                        </li>
+                        <li>
+                            Спецификации освещения
+                        </li>
+                        <li>
+                            Сметы закупки материалов
+                        </li>
+                        <li>
+                            Ведомость финишных отделочных материалов
+                        </li>
+                        <li>
+                            Планы расстановки мебели
+                        </li>
+                        <li>
+                            Планы потолка
+                        </li>
+                        <li>
+                            Планы полов
+                        </li>
+                        <li>
+                            Планы монтажа конструкций
+                        </li>
+                    </div>
+                    <!-- /.js-rate-list__wrap -->
+                </ul>
+                <!-- /.section-rate__item-list -->
+                <button class="js-item-list-btn">
+                    Раскрыть список
+                </button>
+                <!-- /.js-item-list-btn -->
+                <div class="section-rate__item-bottom">
+                    <div class="section-rate__item-btn">
+                        <span>Заказать звонок</span>
+                    </div>
+                    <!-- /.section-rate__item-btn -->
+                    <div class="section-rate__item-subtitle">
+                        Срок 10-15 дней
+                    </div>
+                    <!-- /.section-rate__item-subtitle -->
+                </div>
+                <!-- /.section-rate__item-bottom -->
+            </div>
+            <!-- /.section-rate__item -->
+            <div class="section-rate__item">
+                <div class="section-rate__item-title">
+                    Планировочные решения
+                </div>
+                <!-- /.section-rate__item-title -->
+                <div class="section-rate__item-price">
+                    200руб/м2
+                </div>
+                <!-- /.section-rate__item-price -->
+                <img loading="lazy" class="section-rate__item-img" src="img/rate-7.webp" alt="picture">
+                <!-- /.section-rate__item-img -->
+                <div class="section-rate__list-title">
+                    Состав работ
+                </div>
+                <!-- /.section-rate__list-title -->
+                <ul class="section-rate__item-list">
+                    <li>
+                        Анализ документации
+                    </li>
+                    <li>
+                        Посадка дома на участок
+                    </li>
+                    <li>
+                        Ориентация по сторонам света
+                    </li>
+                    <div class="js-rate-list__wrap">
+                        <li>
+                            Поэтажная планировка с расстановкой мебели и сантехники
+                        </li>
+                        <li>
+                            2-3 эргономичных варианта
+                        </li>
+                        <li>
+                            Чертеж планировочного решения с осями
+                        </li>
+                    </div>
+                    <!-- /.js-rate-list__wrap -->
+                </ul>
+                <!-- /.section-rate__item-list -->
+                <button class="js-item-list-btn">
+                    Раскрыть список
+                </button>
+                <!-- /.js-item-list-btn -->
+                <div class="section-rate__item-bottom">
+                    <div class="section-rate__item-btn">
+                        <span>Заказать звонок</span>
+                    </div>
+                    <!-- /.section-rate__item-btn -->
+                    <div class="section-rate__item-subtitle">
+                        Срок 10-15 дней
+                    </div>
+                    <!-- /.section-rate__item-subtitle -->
+                </div>
+                <!-- /.section-rate__item-bottom -->
+            </div>
+            <!-- /.section-rate__item -->
+            <div class="section-rate__item">
+                <div class="section-rate__item-title">
+                    Дизайн фасадов
+                </div>
+                <!-- /.section-rate__item-title -->
+                <div class="section-rate__item-price">
+                    250 ₽/м<sup>2</sup>
+                </div>
+                <!-- /.section-rate__item-price -->
+                <img loading="lazy" class="section-rate__item-img" src="img/rate-8.webp" alt="picture">
+                <!-- /.section-rate__item-img -->
+                <div class="section-rate__list-title">
+                    Состав работ
+                </div>
+                <!-- /.section-rate__list-title -->
+                <ul class="section-rate__item-list">
+                    <li>
+                        Построение модели
+                    </li>
+                    <li>
+                        Разработка внешнего вида дома
+                    </li>
+                    <li>
+                        Проработка навесов и террас
+                    </li>
+                    <div class="js-rate-list__wrap">
+                        <li>
+                            Подбор материалов отделки с указанием производителей
+                        </li>
+                        <li>
+                            Чертеж фасада с размерами
+                        </li>
+                        <li>
+                            Чертеж разрезов дома
+                        </li>
+                        <li>
+                            Спецификация оконных проёмов
+                        </li>
+                    </div>
+                    <!-- /.js-rate-list__wrap -->
+                </ul>
+                <!-- /.section-rate__item-list -->
+                <button class="js-item-list-btn">
+                    Раскрыть список
+                </button>
+                <!-- /.js-item-list-btn -->
+                <div class="section-rate__item-bottom">
+                    <div class="section-rate__item-btn">
+                        <span>Заказать звонок</span>
+                    </div>
+                    <!-- /.section-rate__item-btn -->
+                    <div class="section-rate__item-subtitle">
+                        Срок 10-15 дней
+                    </div>
+                    <!-- /.section-rate__item-subtitle -->
+                </div>
+                <!-- /.section-rate__item-bottom -->
+            </div>
+            <!-- /.section-rate__item -->
+            <div class="section-rate__item">
+                <div class="section-rate__item-title">
+                    Ландшафтный дизайн
+                </div>
+                <!-- /.section-rate__item-title -->
+                <div class="section-rate__item-price">
+                    Цена по запросу
+                </div>
+                <!-- /.section-rate__item-price -->
+                <img loading="lazy" class="section-rate__item-img" src="img/rate-9.webp" alt="picture">
+                <!-- /.section-rate__item-img -->
+                <div class="section-rate__list-title">
+                    Состав работ
+                </div>
+                <!-- /.section-rate__list-title -->
+                <ul class="section-rate__item-list">
+                    <li>
+                        Разработка концепции участка
+                    </li>
+                    <li>
+                        Озеленение участка
+                    </li>
+                    <li>
+                        Создание прудов и водоемов
+                    </li>
+                    <div class="js-rate-list__wrap">
+                        <li>
+                            Доставка и посадка растений
+                        </li>
+                        <li>
+                            Прокладка коммуникаций
+                        </li>
+                        <li>
+                            Установка ограждений
+                        </li>
+                        <li>
+                            Монтаж освещения
+                        </li>
+                    </div>
+                    <!-- /.js-rate-list__wrap -->
+                </ul>
+                <!-- /.section-rate__item-list -->
+                <button class="js-item-list-btn">
+                    Раскрыть список
+                </button>
+                <!-- /.js-item-list-btn -->
+                <div class="section-rate__item-bottom">
+                    <div class="section-rate__item-btn">
+                        <span>Заказать звонок</span>
+                    </div>
+                    <!-- /.section-rate__item-btn -->
+                    <div class="section-rate__item-subtitle">
+                        Срок 10-15 дней
+                    </div>
+                    <!-- /.section-rate__item-subtitle -->
+                </div>
+                <!-- /.section-rate__item-bottom -->
+            </div>
+            <!-- /.section-rate__item -->
+        </div>
+        <!-- /.section-rate__items -->
+    </div>
+    <!-- /.section-rate__wrap -->
+</section>
+<!-- /.section-rate -->
+
+  <!-- Один и тот же блок что и section-start, только без одного html item-->
+  <section class="section-start">
+    <div class="section-start__wrap">
+        <h2 class="section-start__title">
+            Расскажите, что вы хотите сделать, а мы сделаем расчет
+        </h2>
+        <!-- /.section-start__title -->
+        <form class="section-start__form" action="">
+            <input class="section-start__input" type="email" name="" id="" placeholder="Введите вашу почту">
+            <!-- /.section-start__input -->
+            <div class="section-start__form-wrap">
+                <button class="section-start__btn">
+                    <span>
+                        Отправить заявку
+                    </span>
+                </button>
+                <!-- /.section-start__btn -->
+            </div>
+            <!-- /.section-start__form-wrap -->
+        </form>
+        <!-- /.section-start__form -->
+    </div>
+    <!-- /.section-start__wrap -->
+</section>
+<!-- /.section-start -->
+
+
+  <!-- <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="libs/before/before-after.min.js"></script> -->
+
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/paralax/simpleParallax.min.js"></script>
+
+  <script src="js/vendor.js"></script>
+  <script src="libs/wow/wow.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

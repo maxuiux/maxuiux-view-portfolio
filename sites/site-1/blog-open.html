@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Simple</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="stylesheet" href="css/main.min.css?ver=0.0.44">
+  <!-- <link rel="stylesheet" href="libs/before/before-after.css"> -->
+
+  <!-- <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css"> -->
+
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+
+  <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <header class="header-new header-new--black">
+
+    <div class="header-new__wrap">
+
+        <a class="header-new__logo" href="#">
+            <svg>
+                <use xlink:href="img/sprites/multi.svg#logo"></use>
+            </svg>
+        </a>
+        <!-- /.header-new__logo -->
+
+        <div class="header-new__overflow">
+            <div class="header-new__scroll">
+                <div class="header-new__blocks">
+
+                    <div class="header-new__block header-new__block--menu">
+                        <nav class="header-new-menu">
+                            <ul class="header-new-menu__list">
+
+                                <li
+                                    class="header-new-menu__list-item header-new-menu__list-item--arrow js-header-new-menu-sub-btn">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        <span>
+                                            Услуги
+                                        </span>
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-chevron-down"></use>
+                                        </svg>
+                                    </a>
+                                    <!-- /.header-new-menu__list-link -->
+
+                                    <div class="header-new-menu-sub">
+                                        <div class="header-new-menu-sub__wrap">
+                                            <div class="header-new-menu-sub__blocks">
+                                                <div class="header-new-menu-sub__block">
+                                                    <div class="header-new-menu-sub__title">
+                                                        Услуги
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__title -->
+                                                    <ul class="header-new-menu-sub__list">
+                                                        <li>
+                                                            <a href="#">
+                                                                Индивидуальное<br>
+                                                                проектирование
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- /.header-new-menu-sub__list -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block -->
+
+                                                <div class="header-new-menu-sub__block">
+                                                    <div class="header-new-menu-sub__title">
+                                                        Решения
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__title -->
+                                                    <ul class="header-new-menu-sub__list">
+                                                        <li>
+                                                            <a href="#">
+                                                                Архитектурное<br>
+                                                                проектирование
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Эскизный проект
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Архитектурные решения
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Конструктивные решения
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Инженерный проект
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Отопление
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Водоснабжение и Канализация
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Вентиляция
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Газоснабжение
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Электроснабжение
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- /.header-new-menu-sub__list -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block -->
+                                                <div class="header-new-menu-sub__block header-new-menu-sub__block--img">
+                                                    <div class="header-new-menu-sub__block-img">
+                                                        <img loading="lazy" src="img/about-footer-2.webp" alt="picture">
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-img -->
+                                                    <div class="header-new-menu-sub__block-title">
+                                                        Заготовленый текст
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-title -->
+                                                    <div class="header-new-menu-sub__block-text">
+                                                        Давно выяснено, что при оценке дизайна и композиции читаемый
+                                                        текст
+                                                        мешает
+                                                        сосредоточиться.
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-text -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block header-new-menu-sub__block--img -->
+                                            </div>
+                                            <!-- /.header-new-menu-sub__blocks -->
+                                        </div>
+                                        <!-- /.header-new-menu-sub__wrap -->
+                                    </div>
+                                    <!-- /.header-new-menu-sub -->
+
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                                <li class="header-new-menu__list-item">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        Проекты Домов
+                                    </a>
+                                    <!-- /.header-new-menu__list-link -->
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                                <li class="header-new-menu__list-item">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        Цены
+                                    </a>
+                                    <!-- /.header-new-menu__list-link -->
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                                <li
+                                    class="header-new-menu__list-item header-new-menu__list-item--arrow js-header-new-menu-sub-btn">
+                                    <a class="header-new-menu__list-link" href="#">
+                                        <span>
+                                            Бюро
+                                        </span>
+                                        <svg>
+                                            <use xlink:href="img/sprites/multi.svg#icon-chevron-down"></use>
+                                        </svg>
+                                    </a>
+
+                                    <!-- /.header-new-menu__list-link -->
+                                    <div class="header-new-menu-sub">
+                                        <div class="header-new-menu-sub__wrap">
+                                            <div class="header-new-menu-sub__blocks">
+
+                                                <div class="header-new-menu-sub__block">
+                                                    <div class="header-new-menu-sub__title">
+                                                        Бюро
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__title -->
+                                                    <ul class="header-new-menu-sub__list">
+                                                        <li>
+                                                            <a href="#">
+                                                                О нас
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Преимущества
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Сотрудники
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Новости
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Вакансии
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Сотрудничество
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Реквизиты
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- /.header-new-menu-sub__list -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block -->
+                                                <div class="header-new-menu-sub__block header-new-menu-sub__block--img">
+                                                    <div class="header-new-menu-sub__block-img">
+                                                        <img loading="lazy" src="img/contact-slider-1.webp"
+                                                            alt="picture">
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-img -->
+                                                    <div class="header-new-menu-sub__block-title">
+                                                        Заготовленый текст
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-title -->
+                                                    <div class="header-new-menu-sub__block-text">
+                                                        Давно выяснено, что при оценке дизайна и композиции читаемый
+                                                        текст
+                                                        мешает
+                                                        сосредоточиться.
+                                                    </div>
+                                                    <!-- /.header-new-menu-sub__block-text -->
+                                                </div>
+                                                <!-- /.header-new-menu-sub__block header-new-menu-sub__block--img -->
+                                            </div>
+                                            <!-- /.header-new-menu-sub__blocks -->
+                                        </div>
+                                        <!-- /.header-new-menu-sub__wrap -->
+                                    </div>
+                                    <!-- /.header-new-menu-sub -->
+                                </li>
+                                <!-- /.header-new-menu__list-item -->
+
+                            </ul>
+                            <!-- /.header-new-menu__list -->
+                        </nav>
+                        <!-- /.header-new__menu -->
+                    </div>
+                    <!-- /.header-new__block -->
+
+                    <div class="header-new__block header-new__block--info">
+                        <div class="header-new-info">
+                            <div class="header-new-info__items">
+
+                                <div class="header-new-info__item">
+                                    <a class="header-new-info__tel" href="tel:+74993472705">
+                                        +7 (499) 347-27-05
+                                    </a>
+                                    <!-- /.header-new-info__tel -->
+                                </div>
+                                <!-- /.header-new-info__item -->
+
+                                <div class="header-new-info__item header-new-info__item--social">
+                                    <div class="header-new-info-social">
+                                        <ul class="header-new-info-social__list">
+                                            <li>
+                                                <a href="#">
+                                                    <svg>
+                                                        <use xlink:href="img/sprites/multi.svg#icon-header-mail"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <svg>
+                                                        <use xlink:href="img/sprites/multi.svg#icon-whatsapp"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <svg>
+                                                        <use xlink:href="img/sprites/multi.svg#icon-telegram"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.header-new-info-social__list -->
+                                    </div>
+                                    <!-- /.header-new-info-social -->
+                                </div>
+                                <!-- /.header-new-info__item header-new-info__item-social -->
+
+                                <div class="header-new-info__item header-new-info__item--btn">
+                                    <button class="header-new__btn">
+                                        <span>
+                                            Перезвоните Мне
+                                        </span>
+                                    </button>
+                                    <!-- /.header-new-info__btn -->
+                                </div>
+                                <!-- /.header-new-info__item header-new-info__item--btn -->
+
+                            </div>
+                            <!-- /.header-new-info__items -->
+                        </div>
+                        <!-- /.header-new-info -->
+
+                    </div>
+                    <!-- /.header-new__block -->
+
+                </div>
+                <!-- /.header-new__blocks -->
+            </div>
+            <!-- /.header-new__scroll -->
+        </div>
+        <!-- /.header-new__overflow -->
+
+        <button class="header-new-hamburger__btn">
+            <div class="header-new-hamburger__btn-wrap">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- /.header-new-hamburger__btn-wrap -->
+        </button>
+        <!-- /.header-new-hamburger__btn -->
+
+    </div>
+    <!-- /.header-new__wrap -->
+
+</header>
+<!-- /.header-new -->
+
+    <section class="section-blog-open">
+
+    <div class="section-blog-open__wrap">
+
+        <div class="section-blog-open__blocks">
+
+            <div class="section-blog-open__block section-blog-open__block-head">
+
+                <div class="section-blog-open__block-item">
+                    <nav class="section-blog-open__breadcrumbs">
+                        <span>
+                            <a href="#">
+                                Главная
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                Полезное
+                            </a>
+                        </span>
+                        <span>
+                            Статья
+                        </span>
+                    </nav>
+                    <!-- /.section-blog-open__breadcrumbs -->
+
+                    <a class="section-blog-open__btn" href="#">
+                        <div class="section-blog-open__btn-wrap">
+                            <div class="section-blog-open__btn-icon">
+                                <svg>
+                                    <use xlink:href="img/sprites/multi.svg#icon-blog-open-arrow-back"></use>
+                                </svg>
+                            </div>
+                            <!-- /.section-blog-open__btn-icon -->
+                            <div class="section-blog-open__btn-title">
+                                Вернуться в Блог
+                            </div>
+                            <!-- /.section-blog-open__btn-title -->
+                        </div>
+                        <!-- /.section-blog-open__btn-wrap -->
+                    </a>
+
+                    <h1 class="section-blog-open__title">
+                        Read it while it’s hot: November 2023 updates in the Hotjar world
+                    </h1>
+                    <!-- /.section-blog-open__title -->
+
+                    <div class="section-blog-open__categories">
+                        <a href="#" class="section-blog-open__category-link">Рубрика</a>
+                    </div>
+                    <!-- /.section-blog-open__categories -->
+
+                    <div class="section-blog-open__subtitle">
+                        It's November, and we've got exciting updates to share, from what happened last month to what’s
+                        coming soon. Sentiment analysis, improved research hub, popover surveys 2.0, and enhanced team
+                        collaboration... Take a look. 👇
+                    </div>
+                    <!-- /.section-blog-open__subtitle -->
+                </div>
+                <!-- /.section-blog-open__block-item -->
+
+            </div>
+            <!-- /.section-blog-open__block -->
+
+            <div class="section-blog-open__block section-blog-open__block-wrap">
+
+                <div class="section-blog-open__block-item section-blog-open__block-item--1">
+
+                    <div class="section-blog-open-nav">
+                        <div class="section-blog-open-nav__items">
+
+                            <div class="section-blog-open-nav__item">
+                                <h2 class="section-blog-open-nav__item-title">
+                                    Последнее обновление
+                                </h2>
+                                <!-- /.section-blog-open-nav__item-title -->
+                                <div class="section-blog-open-nav__item-subtitle">
+                                    13 дек. 2023
+                                </div>
+                                <!-- /.section-blog-open-nav__item-subtitle -->
+                            </div>
+                            <!-- /.section-blog-open-nav__item -->
+                            <div class="section-blog-open-nav__item">
+                                <h2 class="section-blog-open-nav__item-title">
+                                    Время чтения
+                                </h2>
+                                <!-- /.section-blog-open-nav__item-title -->
+                                <div class="section-blog-open-nav__item-subtitle">
+                                    10 min
+                                </div>
+                                <!-- /.section-blog-open-nav__item-subtitle -->
+                            </div>
+                            <!-- /.section-blog-open-nav__item -->
+                            <div class="section-blog-open-nav__item">
+                                <h2 class="section-blog-open-nav__item-title">
+                                    Поделиться
+                                </h2>
+                                <!-- /.section-blog-open-nav__item-title -->
+                                <div class="section-blog-open-nav__item-share">
+                                    <ul class="section-blog-open-nav-share__list">
+                                        <li>
+                                            <a href="#">
+                                                <svg>
+                                                    <use xlink:href="img/sprites/multi.svg#icon-telegram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg>
+                                                    <use xlink:href="img/sprites/multi.svg#icon-whatsapp"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg>
+                                                    <use xlink:href="img/sprites/multi.svg#icon-vk"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <svg>
+                                                    <use xlink:href="img/sprites/multi.svg#icon-pinterest"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.section-blog-open-nav-share__list -->
+                                </div>
+                                <!-- /.section-blog-open-nav__item-shere -->
+                            </div>
+                            <!-- /.section-blog-open-nav__item -->
+
+                        </div>
+                        <!-- /.section-blog-open-nav__items -->
+                    </div>
+                    <!-- /.section-blog-open-nav -->
+
+                    <div class="section-blog-open-services">
+                        <div class="section-blog-open-services__title">
+                            Наши услуги
+                        </div>
+                        <!-- /.section-blog-open-services__title -->
+                        <div class="section-blog-open-services__description">
+                            Архитектурное бюро Регины Зиминой поможет с любой задачей в области проектирования домов.
+                        </div>
+                        <!-- /.section-blog-open-services__description -->
+                        <div class="section-blog-open-services__list">
+                            <a class="section-blog-open-services__list-item">
+                                <span class="section-blog-open-services__list-item-text">Индивидуальное проектирование</span>
+                                <span class="section-blog-open-services__list-item-icon">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-blog-open-arrow-down"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="section-blog-open-services__list-item">
+                                <span class="section-blog-open-services__list-item-text">Планировка дома</span>
+                                <span class="section-blog-open-services__list-item-icon">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-blog-open-arrow-down"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="section-blog-open-services__list-item">
+                                <span class="section-blog-open-services__list-item-text">Дизайн фасадов</span>
+                                <span class="section-blog-open-services__list-item-icon">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-blog-open-arrow-down"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="section-blog-open-services__list-item">
+                                <span class="section-blog-open-services__list-item-text">Архитектурный проект</span>
+                                <span class="section-blog-open-services__list-item-icon">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-blog-open-arrow-down"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <!-- /.section-blog-open-services__list -->
+                    </div>
+                    <!-- /.section-blog-open-services -->
+
+                </div>
+                <!-- /.section-blog-open__block-item section-blog-open__block-item--1-->
+
+                <div class="section-blog-open__block-item section-blog-open__block-item--2">
+                    <div class="section-blog-open__img">
+                        <img loading="lazy" src="img/design-portfolio-gallery-11.webp" alt="picture">
+                    </div>
+                    <!-- /.section-blog-open__img -->
+                </div>
+                <!-- /.section-blog-open__block-item section-blog-open__block-item--2-->
+
+            </div>
+            <!-- /.section-blog-open__block -->
+
+        </div>
+        <!-- /.section-blog-open__blocks -->
+
+        <div class="section-blog-open-content">
+            <div class="section-blog-open-content__description">
+                <h2>
+                    H2 Text Sentiment analysis: pinpoint issues fast
+                </h2>
+                <img loading="lazy" src="img/design-portfolio-gallery-12.webp" alt="picture">
+                <p>
+                    <b>Жирный текст</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita
+                    ducimus quos <i>Курсив</i>
+                    <u>подчерктнутый текст</u> exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos, <small>маленький текст</small>
+                    nemo quod nostrum iure neque!
+                </p>
+                <p>
+                    <mark>
+                        Маркированный текст выделенный Lorem ipsum <a href="#">ссылка на другую страницу</a> dolor sit,
+                        amet consectetur adipisicing
+                        elit. Libero dignissimos ducimus eius ipsum
+                        laboriosam dolore animi tenetur eum nisi, molestiae sint, eveniet quia cum modi fuga vero
+                        repellat
+                        soluta voluptas!
+                    </mark>
+                </p>
+                <p>
+                    <img loading="lazy" src="img/design-portfolio-gallery-9.webp" alt="picture">
+                </p>
+                <h2>
+                    H2 Text
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <h1>
+                    H1 Text
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <h3>
+                    H3 Text
+                </h3>
+                <blockquote>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quas velit laudantium. Quos dolorum
+                    perspiciatis hic aliquam <a href="#">ссылка на другую страницу</a> dolore sed cupiditate totam,
+                    fugiat ducimus voluptate, impedit modi quod
+                    doloremque assumenda amet!
+                </blockquote>
+                <h4>
+                    H4 Text
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus <a href="#">ссылка на другую страницу</a> deserunt sequi molestias
+                    tenetur, tempore perferendis saepe magni animi eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <h5>
+                    H5 Text
+                </h5>
+                <h6>
+                    H6 Text
+                </h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <ul>
+                    <li>
+                        Пункт листа
+                    </li>
+                    <li>
+                        Пункт листа <a href="#">ссылка на другую страницу</a>
+                    </li>
+                    <li>
+                        Пункт листа
+                    </li>
+                    <li>
+                        Пункт листа
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quia magnam, nesciunt quae
+                        odit
+                        possimus vitae culpa doloribus nostrum dolorum vel porro inventore molestias maxime cumque, non
+                        iure
+                        ea soluta.
+                    </li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <mark>
+                    Lorem ipsum <a href="#">ссылка на другую страницу</a> dolor sit, amet consectetur adipisicing
+                    elit. Libero dignissimos ducimus eius ipsum
+                    laboriosam dolore animi tenetur eum nisi, molestiae sint, eveniet quia cum modi fuga vero
+                    repellat
+                    soluta voluptas!
+                </mark>
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <blockquote>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quas velit laudantium. Quos dolorum
+                    perspiciatis hic aliquam <a href="#">ссылка на другую страницу</a> dolore sed cupiditate totam,
+                    fugiat ducimus voluptate, impedit modi quod
+                    doloremque assumenda amet!
+                </blockquote>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores expedita ducimus quos
+                    exercitationem accusamus deserunt sequi molestias tenetur, tempore perferendis saepe magni animi
+                    eos,
+                    nemo quod nostrum iure neque!
+                </p>
+            </div>
+            <!-- /.section-blog-open-content__description -->
+        </div>
+        <!-- /.section-blog-open-content -->
+
+    </div>
+    <!-- /.section-blog-open__wrap -->
+
+</section>
+<!-- /.section-blog-open -->
+
+    <section class="section-blog-related">
+    <div class="section-blog__wrap">
+        <div class="section-blog-related__title">
+            Похожие статьи
+        </div>
+        <!-- /.section-blog-related__title -->
+        <div class="section-blog__blocks">
+            <a href="#" class="section-blog__block">
+                <div class="section-blog__block-img">
+                    <img loading="lazy" src="img/design-portfolio-gallery-12.webp" alt="picture">
+                </div>
+                <!-- /.section-blog__block-img -->
+                <div class="section-blog__block-category">
+                    Маркетинг
+                </div>
+                <!-- /.section-blog__block-category -->
+                <h2 class="section-blog__block-title">
+                    Как мы строили дом для Сибири
+                </h2>
+                <!-- /.section-blog__block-title -->
+                <div class="section-blog__block-subtitle">
+                    Search engine optimization (SEO) is a popular inbound marketing strategy for good reason. Done well,
+                    it works wonders—magnetically drawing users from Google to your website.
+                </div>
+                <!-- /.section-blog__block-subtitle -->
+            </a>
+            <!-- /.section-blog__block -->
+    
+            <a href="#" class="section-blog__block">
+                <div class="section-blog__block-img">
+                    <img loading="lazy" src="img/design-portfolio-gallery-1.webp" alt="picture">
+                </div>
+                <!-- /.section-blog__block-img -->
+                <div class="section-blog__block-category">
+                    Маркетинг
+                </div>
+                <!-- /.section-blog__block-category -->
+                <h2 class="section-blog__block-title">
+                    Как мы строили дом для Сибири
+                </h2>
+                <!-- /.section-blog__block-title -->
+                <div class="section-blog__block-subtitle">
+                    Search engine optimization (SEO) is a popular inbound marketing strategy for good reason. Done well,
+                    it works wonders—magnetically drawing users from Google to your website.
+                </div>
+                <!-- /.section-blog__block-subtitle -->
+            </a>
+            <!-- /.section-blog__block -->
+    
+            <a href="#" class="section-blog__block">
+                <div class="section-blog__block-img">
+                    <img loading="lazy" src="img/design-portfolio-gallery-2.webp" alt="picture">
+                </div>
+                <!-- /.section-blog__block-img -->
+                <div class="section-blog__block-category">
+                    Маркетинг
+                </div>
+                <!-- /.section-blog__block-category -->
+                <h2 class="section-blog__block-title">
+                    Как мы строили дом для Сибири
+                </h2>
+                <!-- /.section-blog__block-title -->
+                <div class="section-blog__block-subtitle">
+                    Search engine optimization (SEO) is a popular inbound marketing strategy for good reason. Done well,
+                    it works wonders—magnetically drawing users from Google to your website.
+                </div>
+                <!-- /.section-blog__block-subtitle -->
+            </a>
+            <!-- /.section-blog__block -->
+        </div>
+        <!-- /.section-blog__blocks -->
+        <a class="section-blog-related__more-link" href="#">Все статьи</a>
+    </div>
+    <!-- /.section-blog__wrap -->
+</section>
+<!-- /.section-blog-related -->
+    
+    <!-- <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="libs/before/before-after.min.js"></script> -->
+
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/paralax/simpleParallax.min.js"></script>
+
+    <script src="js/vendor.js"></script>
+    <script src="libs/wow/wow.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

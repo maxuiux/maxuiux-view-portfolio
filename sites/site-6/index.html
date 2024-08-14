@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="@@description">
+	<meta name="keywords" content="@@keywords">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fdcb38">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="theme-color" content="#ffffff">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/libs.min.css?v=5.2.5">
+	<link rel="stylesheet" href="css/style.min.css?v=5.2.5">
+	<title>Ссылки на страницы - Банкротное Бюро № 1</title>
+
+</head>
+
+<style>
+    .links-to-pages {
+        padding: 42px 0 180px;
+    }
+
+    .links-to-pages__header {
+        margin-bottom: 50px;
+    }
+
+    .links-to-pages__logo-img {
+        width: 134px;
+        height: 40px;
+    }
+
+    .links-to-pages__navigation {
+        position: relative;
+    }
+
+    .links-to-pages-menu__list {
+        counter-reset: counter;
+    }
+
+    .links-to-pages-menu__list-link {
+        padding: 20px 0 15px;
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 700;
+        color: #333333;
+        position: relative;
+        transition: color 0.1s ease-in-out;
+    }
+
+    .links-to-pages-menu__list-link::before {
+        content: counter(counter);
+        counter-increment: counter;
+        position: absolute;
+        top: 4px;
+        left: -9px;
+        z-index: 1;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #e9f2f5;
+        transition: color 0.1s ease-in-out;
+    }
+
+    .links-to-pages-menu__list-link:hover {
+        color: #fdcb38;
+    }
+
+    .links-to-pages-menu__list-link:hover.links-to-pages-menu__list-link::before {
+        color: #fdcb38;
+    }
+
+    .links-to-pages-menu__list-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 13px;
+        width: 0;
+        height: 3px;
+        background-color: #fdcb38;
+        z-index: 1;
+        transition: width 0.2s ease-in-out;
+    }
+
+    .links-to-pages-menu__list-link:hover.links-to-pages-menu__list-link::after {
+        width: 100%;
+    }
+
+    .links-to-pages-preview {
+        height: 600px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 8px 60px rgba(217, 234, 239, 0.9);
+        transition: box-shadow 0.15s;
+    }
+
+    .links-to-pages-preview.active0 {
+        box-shadow: 0px 8px 60px rgba(253, 203, 56, 0.5);
+    }
+
+    .links-to-pages-preview__inner {
+        width: 362px;
+        min-height: 100%;
+        background-color: #fff;
+        position: relative;
+    }
+
+    .links-to-pages-preview__inner-title {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        font-size: 21px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #fdcb38;
+        z-index: 1;
+    }
+
+    .links-to-pages-preview__img {
+        display: none;
+        position: relative;
+        z-index: 10;
+    }
+
+    .links-to-pages-preview__img img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .links-to-pages-preview__img1.active1,
+    .links-to-pages-preview__img2.active2,
+    .links-to-pages-preview__img3.active3,
+    .links-to-pages-preview__img4.active4,
+    .links-to-pages-preview__img5.active5,
+    .links-to-pages-preview__img6.active6,
+    .links-to-pages-preview__img7.active7,
+    .links-to-pages-preview__img8.active8 {
+        display: block;
+    }
+
+    @media (max-width: 1199px) {
+        .links-to-pages-preview {
+            top: -40px;
+            right: -40px;
+            transform: scale(0.8);
+        }
+
+        .links-to-pages-menu__list-link {
+            font-size: 29px;
+            padding: 5px 0 15px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .links-to-pages-preview {
+            display: none;
+        }
+    }
+
+    @media (max-width: 719px) {
+        .links-to-pages-menu__list-link {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="links-to-pages">
+        <div class="container">
+            <div class="links-to-pages__header">
+                <a href="/" class="links-to-pages__logo">
+                    <img class="links-to-pages__logo-img" src="images/logo.svg" alt="logotupe img"
+                        title="Банкротное Бюро № 1">
+                </a>
+            </div>
+            <div class="links-to-pages__inner">
+                <div class="links-to-pages__navigation">
+                    <nav class="links-to-pages-menu">
+                        <ol class="links-to-pages-menu__list">
+                            <li class="links-to-pages-menu__list-item">
+                                <a class="links-to-pages-menu__list-link links-to-pages-menu__list-link1"
+                                    href="/main.html" target="_blank" title="Перейти по ссылке > > >">
+                                    Банкротство гражан
+                                </a>
+                            </li>
+                            <li class="links-to-pages-menu__list-item">
+                                <a class="links-to-pages-menu__list-link links-to-pages-menu__list-link2"
+                                    href="/bankruptcy-ie.html" target="_blank" title="Перейти по ссылке > > >">
+                                    Банкротство ИП
+                                </a>
+                            </li>
+                            <li class="links-to-pages-menu__list-item">
+                                <a class="links-to-pages-menu__list-link links-to-pages-menu__list-link3"
+                                    href="/reviews.html" target="_blank" title="Перейти по ссылке > > >">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="links-to-pages-menu__list-item">
+                                <a class="links-to-pages-menu__list-link links-to-pages-menu__list-link4"
+                                    href="/vacancies.html" target="_blank" title="Перейти по ссылке > > >">
+                                    Вакансии
+                                </a>
+                            </li>
+                            <li class="links-to-pages-menu__list-item">
+                                <a class="links-to-pages-menu__list-link links-to-pages-menu__list-link5"
+                                    href="/vacancies-single.html" target="_blank" title="Перейти по ссылке > > >">
+                                    Внутренняя вакансий
+                                </a>
+                            </li>
+                            <li class="links-to-pages-menu__list-item">
+                                <a class="links-to-pages-menu__list-link links-to-pages-menu__list-link6"
+                                    href="/privacy-policy.html" target="_blank" title="Перейти по ссылке > > >">
+                                    Политика конфиденциальности
+                                </a>
+                            </li>
+                            <li class="links-to-pages-menu__list-item">
+                                <a class="links-to-pages-menu__list-link links-to-pages-menu__list-link7"
+                                    href="/err404.html" target="_blank" title="Перейти по ссылке > > >">
+                                    Ошибка 404
+                                </a>
+                            </li>
+                            <li class="links-to-pages-menu__list-item">
+                                <a class="links-to-pages-menu__list-link links-to-pages-menu__list-link8"
+                                    href="/err505.html" target="_blank" title="Перейти по ссылке > > >">
+                                    Ошибка 505
+                                </a>
+                            </li>
+                            <li class="links-to-pages-menu__list-item">
+                                <a class="links-to-pages-menu__list-link"
+                                    href="/modal-list.html" target="_blank" title="Перейти по ссылке > > >">
+                                   Модальные окна
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="links-to-pages-preview animate__animated animate__fadeIn">
+                        <div class="links-to-pages-preview__inner">
+                            <div class="links-to-pages-preview__inner-title">
+                                Предварительный просмотр
+                            </div>
+                            <ul class="links-to-pages-preview__img-list">
+                                <li class="links-to-pages-preview__img links-to-pages-preview__img1">
+                                    <img src="images/preview_pages_img/links-to-pages-preview-img-bg1.jpg"
+                                        alt="images page">
+                                </li>
+                                <li class="links-to-pages-preview__img links-to-pages-preview__img2">
+                                    <img src="images/preview_pages_img/links-to-pages-preview-img-bg2.jpg"
+                                        alt="images page">
+                                </li>
+                                <li class="links-to-pages-preview__img links-to-pages-preview__img3">
+                                    <img src="images/preview_pages_img/links-to-pages-preview-img-bg3.jpg"
+                                        alt="images page">
+                                </li>
+                                <li class="links-to-pages-preview__img links-to-pages-preview__img4">
+                                    <img src="images/preview_pages_img/links-to-pages-preview-img-bg4.jpg"
+                                        alt="images page">
+                                </li>
+                                <li class="links-to-pages-preview__img links-to-pages-preview__img5">
+                                    <img src="images/preview_pages_img/links-to-pages-preview-img-bg5.jpg"
+                                        alt="images page">
+                                </li>
+                                <li class="links-to-pages-preview__img links-to-pages-preview__img6">
+                                    <img src="images/preview_pages_img/links-to-pages-preview-img-bg6.jpg"
+                                        alt="images page">
+                                </li>
+                                <li class="links-to-pages-preview__img links-to-pages-preview__img7">
+                                    <img src="images/preview_pages_img/links-to-pages-preview-img-bg7.jpg"
+                                        alt="images page">
+                                </li>
+                                <li class="links-to-pages-preview__img links-to-pages-preview__img8">
+                                    <img src="images/preview_pages_img/links-to-pages-preview-img-bg8.jpg"
+                                        alt="images page">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        // jQuery
+        jQuery(function ($) {
+
+            $('.links-to-pages-menu__list-link').hover(function () {
+                $('.links-to-pages-preview').toggleClass('active0');
+            });
+            $('.links-to-pages-menu__list-link1').hover(function () {
+                $('.links-to-pages-preview__img1').toggleClass('active1');
+            });
+            $('.links-to-pages-menu__list-link2').hover(function () {
+                $('.links-to-pages-preview__img2').toggleClass('active2');
+            });
+            $('.links-to-pages-menu__list-link3').hover(function () {
+                $('.links-to-pages-preview__img3').toggleClass('active3');
+            });
+            $('.links-to-pages-menu__list-link4').hover(function () {
+                $('.links-to-pages-preview__img4').toggleClass('active4');
+            });
+            $('.links-to-pages-menu__list-link5').hover(function () {
+                $('.links-to-pages-preview__img5').toggleClass('active5');
+            });
+            $('.links-to-pages-menu__list-link6').hover(function () {
+                $('.links-to-pages-preview__img6').toggleClass('active6');
+            });
+            $('.links-to-pages-menu__list-link7').hover(function () {
+                $('.links-to-pages-preview__img7').toggleClass('active7');
+            });
+            $('.links-to-pages-menu__list-link8').hover(function () {
+                $('.links-to-pages-preview__img8').toggleClass('active8');
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

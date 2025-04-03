@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Подбор персонала</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="libs/fancybox/fancybox.css">
+  <link rel="stylesheet" href="libs/choices/choices.min.css">
+  <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+    <header class="header" data-component="mobile-menu">
+    <div class="container-header">
+        <div class="header__items">
+            <div class="header__item">
+                <a href="/" class="logo">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__item">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link button">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link button">
+                                Партнерам
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link button">
+                                Водителям
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link button">
+                                Доставка для бизнеса
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__item">
+                <div class="header-navigation">
+                    <a href="#" class="button">
+                        Войти
+                    </a>
+                    <a href="#" class="button button-black">
+                        Зарегистрироваться
+                    </a>
+                </div>
+                <button class="button-hamburger" aria-label="Открыть мобильное меню" data-element="button-hamburger">
+                    <div class="button-hamburger__wrap">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="sidebar" data-element="sidebar" data-sidebar-active="false">
+    <div class="sidebar__wrap">
+        <div class="sidebar__blocks">
+            <div class="sidebar__menu sidebar-menu">
+                <ul class="sidebar-menu__list">
+                    <li class="sidebar-menu__list-item">
+                        <a href="#" class="sidebar-menu__list-link button">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__list-item">
+                        <a href="#" class="sidebar-menu__list-link button">
+                            Партнерам
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__list-item">
+                        <a href="#" class="sidebar-menu__list-link button">
+                            Водителям
+                        </a>
+                    </li>
+                    <li class="sidebar-menu__list-item">
+                        <a href="#" class="sidebar-menu__list-link button">
+                            Доставка для бизнеса
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar__footer">
+                <div class="sidebar-navigation">
+                    <a href="#" class="button">
+                        Войти
+                    </a>
+                    <a href="#" class="button button-black">
+                        Зарегистрироваться
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <main>
+
+        <section class="header-info-purple">
+    <div class="container-xl">
+        <div class="header-info-purple__wrap">
+            <div class="header-info-purple__description">
+                <h1 class="header-info-purple__title">
+                    Подбор персонала на ваших условиях
+                </h1>
+                <p class="header-info-purple__text">
+                    Мы не кадровое агентство. Мы - платформа подбора персонала, соединяющая заказчиков и рекрутеров.
+                    Поможем подобрать персонал быстро и выгодно.
+                </p>
+                <button class="button button-white button-md" data-component="button-modal-open" data-target="#modal-send-form-callback">
+                    Начать подбор
+                </button>
+            </div>
+            <div class="header-info-purple__image">
+                <svg>
+                    <use xlink:href="img/sprites/multi.svg#header-info-purple-image-00"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="how-it-work section-padding-md">
+    <div class="container">
+        <h2 class="title">
+            Как это работает
+        </h2>
+        <div class="how-it-work-items">
+            <div class="how-it-work-item">
+                <div class="how-it-work-item__info">
+                    <div class="how-it-work-item__num">
+                        1
+                    </div>
+                    <div class="how-it-work-item__title">
+                        Разместите заявку на подбор, с указанием цены и требований
+                    </div>
+                </div>
+                <div class="how-it-work-item__image how-it-work-item__image--sm">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#how-it-work-item-image-01"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="how-it-work-item">
+                <div class="how-it-work-item__info">
+                    <div class="how-it-work-item__num">
+                        2
+                    </div>
+                    <div class="how-it-work-item__title">
+                        Рекрутеры, которых устроит ваша цена возьмут заказ в работу
+                    </div>
+                </div>
+                <div class="how-it-work-item__image">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#how-it-work-item-image-02"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="how-it-work-item">
+                <div class="how-it-work-item__info">
+                    <div class="how-it-work-item__num">
+                        3
+                    </div>
+                    <div class="how-it-work-item__title">
+                        Получите резюме кандидатов, которые готовы работать у вас
+                    </div>
+                </div>
+                <div class="how-it-work-item__image how-it-work-item__image--md">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#how-it-work-item-image-03"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="advantages section-padding-top-md section-padding-bottom-md section-color-white">
+    <div class="container">
+        <h2 class="title">
+            С нами сплошные<br>
+            преимущества
+        </h2>
+        <div class="advantages-items">
+            <div class="advantages-item">
+                <div class="advantages-item__image">
+                    <img src="img/advantages-item-image-01.jpg" alt="Экономия" loading="lazy">
+                </div>
+                <div class="advantages-item__info">
+                    <h3 class="advantages-item__title">
+                        Экономия
+                    </h3>
+                    <p class="advantages-item__text">
+                        Это самый выгодный способ подбор персонала, в сравнении с обычными кадровыми агентствами
+                    </p>
+                </div>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item__image">
+                    <img src="img/advantages-item-image-02.jpg" alt="Скорость" loading="lazy">
+                </div>
+                <div class="advantages-item__info">
+                    <h3 class="advantages-item__title">
+                        Скорость
+                    </h3>
+                    <p class="advantages-item__text">
+                        Ваш запрос получат свыше 100 частных рекрутеров и фирм и уже через несколько часов приступят к
+                        поиску
+                    </p>
+                </div>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item__image">
+                    <img src="img/advantages-item-image-03.jpg" alt="Удобство" loading="lazy">
+                </div>
+                <div class="advantages-item__info">
+                    <h3 class="advantages-item__title">
+                        Удобство
+                    </h3>
+                    <p class="advantages-item__text">
+                        Вам не нужно договариваться с каждым рекрутером отдельно. Один раз заполняете заявку, а
+                        рекрутеры направят резюме кандидатов, готовых работать у вас
+                    </p>
+                </div>
+            </div>
+            <div class="advantages-item">
+                <div class="advantages-item__image">
+                    <img src="img/advantages-item-image-04.jpg" alt="Подбор через наш сервис" loading="lazy">
+                </div>
+                <div class="advantages-item__info">
+                    <h3 class="advantages-item__title">
+                        Подбор через наш сервис
+                    </h3>
+                    <p class="advantages-item__text">
+                        Кандидаты проходят строгий отбор по вашим критериям, а вы получаете только кандидатов, готовых
+                        прийти на собеседование
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="select-personnel section-padding-md">
+    <div class="container">
+        <h2 class="title">
+            Подбираем персонал
+        </h2>
+        <div class="select-personnel__tabs" data-component="content-swapper">
+            <div class="select-personnel__buttons">
+                <button class="select-personnel__button active" data-element="content-swapper:button"
+                    data-target="tab1">
+                    Линейный персонал
+                </button>
+                <button class="select-personnel__button" data-element="content-swapper:button" data-target="tab2">
+                    Магазины
+                </button>
+                <button class="select-personnel__button" data-element="content-swapper:button" data-target="tab3">
+                    Вахта
+                </button>
+                <button class="select-personnel__button" data-element="content-swapper:button" data-target="tab4">
+                    Строительство
+                </button>
+                <button class="select-personnel__button" data-element="content-swapper:button" data-target="tab5">
+                    Хорека
+                </button>
+                <button class="select-personnel__button" data-element="content-swapper:button" data-target="tab6">
+                    IT Направление
+                </button>
+            </div>
+            <div class="select-personnel-info">
+                <div class="select-personnel-info__items">
+                    <div class="select-personnel-info__item active" data-element="content-swapper:item"
+                        data-target="tab1">
+                        <h3 class="select-personnel-info__title">
+                            Направление
+                        </h3>
+                        <ul class="select-personnel-info__list">
+                            <li class="select-personnel-info__list-item">
+                                Операции на производственных линиях
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Сборка продукции
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Контроль качества
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Обслуживание и ремонт оборудования
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Погрузочно-разгрузочные работы
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Упаковка и маркировка товаров
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Учет и размещение на складе
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Перемещение продукции по складу
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Консультирование и помощь клиентам
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Продажа товаров и услуг
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Работа на кассе
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Обработка заказов и возвратов
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Доставка товаров
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Вождение транспортных средств
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Техническое обслуживание транспортных средств
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Уборка помещений и территорий
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Вывоз мусора
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Санитарная обработка оборудования и помещений
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Приготовление и подача блюд
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Обслуживание посетителей
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Уборка посуды и кухонных помещений
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Техническое обслуживание и ремонт
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Монтаж и настройка оборудования
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Помощь в устранении неполадок
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Ведение документации
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Обработка информации
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Помощь в организации работы
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Контроль соблюдения норм безопасности
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Проведение инструктажей и обучения
+                            </li>
+                            <li class="select-personnel-info__list-item">
+                                Охрана объектов и имущества
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-personnel-info__item" data-element="content-swapper:item" data-target="tab2">
+                        <h3 class="select-personnel-info__title">
+                            Направление
+                        </h3>
+                        <ul class="select-personnel-info__list">
+                            <li class="select-personnel-info__list-item">
+                                Направление 2
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-personnel-info__item" data-element="content-swapper:item" data-target="tab3">
+                        <h3 class="select-personnel-info__title">
+                            Направление
+                        </h3>
+                        <ul class="select-personnel-info__list">
+                            <li class="select-personnel-info__list-item">
+                                Направление 3
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-personnel-info__item" data-element="content-swapper:item" data-target="tab4">
+                        <h3 class="select-personnel-info__title">
+                            Направление
+                        </h3>
+                        <ul class="select-personnel-info__list">
+                            <li class="select-personnel-info__list-item">
+                                Направление 4
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-personnel-info__item" data-element="content-swapper:item" data-target="tab5">
+                        <h3 class="select-personnel-info__title">
+                            Направление
+                        </h3>
+                        <ul class="select-personnel-info__list">
+                            <li class="select-personnel-info__list-item">
+                                Направление 5
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-personnel-info__item" data-element="content-swapper:item" data-target="tab6">
+                        <h3 class="select-personnel-info__title">
+                            Направление
+                        </h3>
+                        <ul class="select-personnel-info__list">
+                            <li class="select-personnel-info__list-item">
+                                Направление 6
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="comparison">
+    <div class="container-md">
+        <h2 class="title">
+            Сравните сами
+        </h2>
+        <div class="comparison-items">
+            <div class="comparison-item">
+                <h3 class="comparison-item__title">
+                    <span>
+                        Рекрутинговые агентства
+                    </span>
+                </h3>
+                <ul class="comparison-item__list">
+                    <li class="comparison-item__list-li">
+                        <h4 class="comparison-item__list-title">
+                            Стоимость подбора
+                        </h4>
+                        <div class="comparison-item__list-subtitle">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-x"></use>
+                            </svg>
+                            <span>
+                                От 12000 ₽
+                            </span>
+                        </div>
+                    </li>
+                    <li class="comparison-item__list-li">
+                        <h4 class="comparison-item__list-title">
+                            Первые кандидаты
+                        </h4>
+                        <div class="comparison-item__list-subtitle">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-x"></use>
+                            </svg>
+                            <span>
+                                От 2-х дней
+                            </span>
+                        </div>
+                    </li>
+                    <li class="comparison-item__list-li">
+                        <h4 class="comparison-item__list-title">
+                            Удобство
+                        </h4>
+                        <div class="comparison-item__list-subtitle">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-x"></use>
+                            </svg>
+                            <span>
+                                Заключение договора<br>
+                                Общение с менеджерами
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="comparison-item comparison-item--color-purple">
+                <h3 class="comparison-item__title">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#logo-single"></use>
+                    </svg>
+                    <span>
+                        Подбор через наш сервис
+                    </span>
+                </h3>
+                <ul class="comparison-item__list">
+                    <li class="comparison-item__list-li">
+                        <h4 class="comparison-item__list-title">
+                            Стоимость подбора
+                        </h4>
+                        <div class="comparison-item__list-subtitle">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-check"></use>
+                            </svg>
+                            <span>
+                                От 5000 ₽
+                            </span>
+                        </div>
+                    </li>
+                    <li class="comparison-item__list-li">
+                        <h4 class="comparison-item__list-title">
+                            Первые кандидаты
+                        </h4>
+                        <div class="comparison-item__list-subtitle">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-check"></use>
+                            </svg>
+                            <span>
+                                От 2-х часов
+                            </span>
+                        </div>
+                    </li>
+                    <li class="comparison-item__list-li">
+                        <h4 class="comparison-item__list-title">
+                            Удобство
+                        </h4>
+                        <div class="comparison-item__list-subtitle">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-check"></use>
+                            </svg>
+                            <span>
+                                Удобная платформа<br>
+                                Оплата один раз
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="comparison-item">
+                <h3 class="comparison-item__title">
+                    <span>
+                        Доска вакансий
+                    </span>
+                </h3>
+                <ul class="comparison-item__list">
+                    <li class="comparison-item__list-li">
+                        <h4 class="comparison-item__list-title">
+                            Стоимость подбора
+                        </h4>
+                        <div class="comparison-item__list-subtitle">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-x"></use>
+                            </svg>
+                            <span>
+                                От 3000 ₽
+                            </span>
+                        </div>
+                    </li>
+                    <li class="comparison-item__list-li">
+                        <h4 class="comparison-item__list-title">
+                            Первые кандидаты
+                        </h4>
+                        <div class="comparison-item__list-subtitle">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-x"></use>
+                            </svg>
+                            <span>
+                                От 2-х дней
+                            </span>
+                        </div>
+                    </li>
+                    <li class="comparison-item__list-li">
+                        <h4 class="comparison-item__list-title">
+                            Удобство
+                        </h4>
+                        <div class="comparison-item__list-subtitle">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-x"></use>
+                            </svg>
+                            <span>
+                                Самостоятельный подбор персонала по откликам
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="order-feed section-padding-md">
+    <div class="container-md container-no-padding-right">
+        <h2 class="title">
+            Лента заказов
+        </h2>
+        <div class="items-swiper" data-component="items-swiper">
+            <div class="swiper" data-element="items-swiper:swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="order-feed-item">
+                            <div class="order-feed-item__header">
+                                <div class="order-feed-item__image">
+                                    <img src="img/order-feed-item-image-01.jpg" alt="Экономия" loading="lazy">
+                                </div>
+                                <h3 class="order-feed-item__title">
+                                    Подбор водителей
+                                </h3>
+                            </div>
+                            <div class="order-feed-item__info">
+                                <span>
+                                    5 человек
+                                </span>
+                                <span>
+                                    3 дня
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="order-feed-item">
+                            <div class="order-feed-item__header">
+                                <div class="order-feed-item__image">
+                                    <img src="img/order-feed-item-image-02.jpg" alt="Экономия" loading="lazy">
+                                </div>
+                                <h3 class="order-feed-item__title">
+                                    Подбор официантов
+                                </h3>
+                            </div>
+                            <div class="order-feed-item__info">
+                                <span>
+                                    12 человек
+                                </span>
+                                <span>
+                                    2 дня
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="order-feed-item">
+                            <div class="order-feed-item__header">
+                                <div class="order-feed-item__image">
+                                    <img src="img/order-feed-item-image-03.jpg" alt="Экономия" loading="lazy">
+                                </div>
+                                <h3 class="order-feed-item__title">
+                                    Подбор грузчиков
+                                </h3>
+                            </div>
+                            <div class="order-feed-item__info">
+                                <span>
+                                    10 человек
+                                </span>
+                                <span>
+                                    3 дня
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="order-feed-item">
+                            <div class="order-feed-item__header">
+                                <div class="order-feed-item__image">
+                                    <img src="img/order-feed-item-image-01.jpg" alt="Экономия" loading="lazy">
+                                </div>
+                                <h3 class="order-feed-item__title">
+                                    Подбор водителей
+                                </h3>
+                            </div>
+                            <div class="order-feed-item__info">
+                                <span>
+                                    5 человек
+                                </span>
+                                <span>
+                                    3 дня
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="order-feed-item">
+                            <div class="order-feed-item__header">
+                                <div class="order-feed-item__image">
+                                    <img src="img/order-feed-item-image-02.jpg" alt="Экономия" loading="lazy">
+                                </div>
+                                <h3 class="order-feed-item__title">
+                                    Подбор официантов
+                                </h3>
+                            </div>
+                            <div class="order-feed-item__info">
+                                <span>
+                                    12 человек
+                                </span>
+                                <span>
+                                    2 дня
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="order-feed-item">
+                            <div class="order-feed-item__header">
+                                <div class="order-feed-item__image">
+                                    <img src="img/order-feed-item-image-03.jpg" alt="Экономия" loading="lazy">
+                                </div>
+                                <h3 class="order-feed-item__title">
+                                    Подбор грузчиков
+                                </h3>
+                            </div>
+                            <div class="order-feed-item__info">
+                                <span>
+                                    10 человек
+                                </span>
+                                <span>
+                                    3 дня
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="items-swiper-buttons">
+                <div class="items-swiper-button items-swiper-button--prev" data-element="items-swiper:prev">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#icon-arrow-left-short"></use>
+                    </svg>
+                </div>
+                <div class="items-swiper-button items-swiper-button--next" data-element="items-swiper:next">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#icon-arrow-right-short"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="price-single section-padding-top-md section-padding-bottom-xxl section-color-white">
+    <div class="container-md">
+        <h2 class="title">
+            Стоимость
+        </h2>
+        <div class="price-single-box">
+            <div class="price-single-box__wrap">
+                <h3 class="price-single-box__title">
+                    Стоимость наших услуг 0₽<br>
+                    Вы платите только рекрутерам за привлечение кандидатов
+                </h3>
+                <button class="button button-black-inverse button-md" data-component="button-modal-open"
+                    data-target="#modal-send-form-callback">
+                    Оставить заявку
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="select-personnel section-padding-top-md section-padding-bottom-md">
+    <div class="container">
+        <h2 class="title">
+            Остались вопросы?
+        </h2>
+        <div data-component="accordion">
+            <div class="accordion__item" data-element="accordion:item">
+                <div class="accordion__toggle" data-element="accordion:toggle">
+                    <h3 class="accordion__title">
+                        Как определяется стоимость подбора?
+                    </h3>
+                    <div class="accordion__icon">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-plus"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion__content" data-element="accordion:content">
+                    <p>
+                        Наш сервис - это аукцион, в котором вы сами назначаете сколько готовы заплатить рекрутерам за
+                        подбор. Помните, чем лучше ваше предложение, тем больше рекрутеров будут предлагать вам своих
+                        кандидатов. Определить оптимальную стоимость подбора поможет наш прогнозчик.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__item" data-element="accordion:item">
+                <div class="accordion__toggle" data-element="accordion:toggle">
+                    <h3 class="accordion__title">
+                        Когда я начну получать отклики?
+                    </h3>
+                    <div class="accordion__icon">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-plus"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion__content" data-element="accordion:content">
+                    <p>
+                        Вы будете получать не просто отклики, а кандидатов, которые прошли первое собеседование с
+                        рекрутером и точно соответствуют вашим требованиям. Скорость, с которой рекрутеры будут
+                        отправлять к вам своих кандидатов зависит от цены, которую вы готовы предложить за подбор.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__item" data-element="accordion:item">
+                <div class="accordion__toggle" data-element="accordion:toggle">
+                    <h3 class="accordion__title">
+                        Мне нужно будет договариваться с каждым рекрутером отдельно?
+                    </h3>
+                    <div class="accordion__icon">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-plus"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion__content" data-element="accordion:content">
+                    <p>
+                        Нет, для вас наш сервис - это единое окно заказа. Один раз, разместив требования к вакансии,
+                        более 100 верифицированных нами рекрутеров начнут поиск кандидатов для вас. Ваша задача лишь
+                        заинтересовать их стоимостью, которую вы готовы заплатить за подбор.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__item" data-element="accordion:item">
+                <div class="accordion__toggle" data-element="accordion:toggle">
+                    <h3 class="accordion__title">
+                        Почему бы мне просто не обратиться к рекрутинговому агентству или частному рекрутеру?
+                    </h3>
+                    <div class="accordion__icon">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-plus"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion__content" data-element="accordion:content">
+                    <p>
+                        За счет аукционной модели вы будете получать услугу по подбору дешевле. А за счет большого
+                        количества верифицированных рекрутеров этот процесс будет гораздо быстрее.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__item" data-element="accordion:item">
+                <div class="accordion__toggle" data-element="accordion:toggle">
+                    <h3 class="accordion__title">
+                        Почему бы мне просто не разместить вакансию на HH.ru или Авито?
+                    </h3>
+                    <div class="accordion__icon">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-plus"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion__content" data-element="accordion:content">
+                    <p>
+                        Отклики с сервисов вакансии не прошли первичную обработку, поэтому работа с ними занимает
+                        намного больше времени. Если вы ищите сразу несколько работников, размещение вакансий может быть
+                        неэффективно. Рекрутеры используют очень широкий спектр инструментов по поиску кандидатов,
+                        поэтому дают вам доступ к большему количеству подходящих работников.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__item" data-element="accordion:item">
+                <div class="accordion__toggle" data-element="accordion:toggle">
+                    <h3 class="accordion__title">
+                        Какие у вас гарантии?
+                    </h3>
+                    <div class="accordion__icon">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-plus"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion__content" data-element="accordion:content">
+                    <p>
+                        Мы гарантируем вам соблюдение стоимости подбора специалистов, которую вы сами назначаете.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__item" data-element="accordion:item">
+                <div class="accordion__toggle" data-element="accordion:toggle">
+                    <h3 class="accordion__title">
+                        Вы занимаетесь подбором всех специальностей?
+                    </h3>
+                    <div class="accordion__icon">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-plus"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion__content" data-element="accordion:content">
+                    <p>
+                        На нашем сайте отображен список вакансий, с которыми мы работаем. Если вы не нашли нужный
+                        раздел, обратитесь в службу поддержки, мы постараемся вам помочь.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__item" data-element="accordion:item">
+                <div class="accordion__toggle" data-element="accordion:toggle">
+                    <h3 class="accordion__title">
+                        Как я могу оплатить услугу подбора на вашем сервисе?
+                    </h3>
+                    <div class="accordion__icon">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-plus"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion__content" data-element="accordion:content">
+                    <p>
+                        После модерации вашей вакансии, вы можете оплатить сервис, получив все необходимые закрывающие
+                        документы.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__item" data-element="accordion:item">
+                <div class="accordion__toggle" data-element="accordion:toggle">
+                    <h3 class="accordion__title">
+                        Кому не подойдет наш сервис?
+                    </h3>
+                    <div class="accordion__icon">
+                        <svg>
+                            <use xlink:href="img/sprites/multi.svg#icon-plus"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion__content" data-element="accordion:content">
+                    <p>
+                        Мы не занимаемся подбором беловоротничкового персонала уровня выше middle, для этих целей вам
+                        лучше выбрать специализированное кадровое агентство.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="container-footer">
+        <div class="footer__blocks">
+            <div class="footer__block">
+                <div class="footer-nav-top">
+                    <a href="#" class="footer-nav-top__link">
+                        О нас
+                    </a>
+                    <a href="#" class="footer-nav-top__link">
+                        Партнерам
+                    </a>
+                    <a href="#" class="footer-nav-top__link">
+                        Водителям
+                    </a>
+                    <a href="#" class="footer-nav-top__link">
+                        Доска для бизнеса
+                    </a>
+                    <a href="#" class="footer-nav-top__link">
+                        Отзывы
+                    </a>
+                    <a href="#" class="footer-nav-top__link">
+                        Контакты
+                    </a>
+                </div>
+                <div class="footer-nav-bottom">
+                    <div class="footer-nav-bottom__items">
+                        <div class="footer-nav-bottom__item">
+                            <div class="footer-nav-bottom__title">
+                                Категория
+                            </div>
+                            <ul class="footer-nav-bottom__list">
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-bottom__item">
+                            <div class="footer-nav-bottom__title">
+                                Категория
+                            </div>
+                            <ul class="footer-nav-bottom__list">
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-bottom__item">
+                            <div class="footer-nav-bottom__title">
+                                Категория
+                            </div>
+                            <ul class="footer-nav-bottom__list">
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                                <li class="footer-nav-bottom__list-item">
+                                    <a href="#" class="footer-nav-bottom__list-link">
+                                        Пункт меню
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__block">
+                <div class="footer-contacts">
+                    <div class="footer-contacts__title">
+                        Для связи
+                    </div>
+                    <div class="footer-contacts__wrap">
+                        <a href="tel:+799912345678" class="footer-contacts__subtitle footer-contacts__subtitle--link">
+                            +7 (999) 123-45-678
+                        </a>
+                        <a href="mailto:test@email.com"
+                            class="footer-contacts__subtitle footer-contacts__subtitle--link">
+                            info@epodbor.ru
+                        </a>
+                        <div class="footer-contacts__subtitle">
+                            г. Москва, ул. Мясницкая, <br>
+                            д. 13, стр. 18
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <ul class="footer-info__list">
+                <li class="footer-info__list-item">
+                    <a href="#" class="footer-info__list-link footer-info__list-link--color-brand">
+                        epodbor.ru 2024
+                    </a>
+                </li>
+                <li class="footer-info__list-item">
+                    <a href="#" class="footer-info__list-link">
+                        Политика конфиденциальности
+                    </a>
+                </li>
+                <li class="footer-info__list-item">
+                    <a href="#" class="footer-info__list-link">
+                        Карта сайта
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    <div class="modal" data-component="modal" data-modal-active="false" id="modal-send-form-callback">
+    <div class="modal-wrap modal-wrap--sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header__title">
+                    Форма
+                </div>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="form" method="POST">
+                    <div class="form__items">
+                        <div class="form__item">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__item">
+                            <input type="tel" placeholder="Номер телефона" data-component="phone-mask">
+                        </div>
+                        <div class="form__item">
+                            <div class="form__item-warning">
+                                Отправляя данную форму, вы подтверждаете свое согласие на обработку <a
+                                    href="#">персональных данных</a>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <button class="button button-main button-md">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button class="modal-close-btn" data-element="button-modal-close">
+                <svg>
+                    <use xlink:href="img/sprites/multi.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="libs/fancybox/fancybox.umd.js"></script>
+<script src="libs/choices/choices.min.js"></script>
+<script src="js/index.min.js"></script>
+
+</body>
+
+</html>
